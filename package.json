@@ -1,0 +1,30 @@
+{
+  "name": "nwpro-web",
+  "version": "0.0.1",
+  "description": "Free/Libre & Open Source Software, security, and digital privacy reference material for Android & Linux",
+  "private": true,
+  "keywords": [ "android, linux, open-source, opensource, floss, foss, security, privacy, cybersecurity"
+  ],
+  "browserslist": [
+    "defaults and fully supports es6-module",
+    "maintained node versions"
+  ],
+  "license": "(CC-BY-4.0 OR GPL-3.0-or-later)",
+  "author": "Scott Lopez",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
