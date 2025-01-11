@@ -1,4 +1,5 @@
-<!-- SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later -->
+<!-- SPDX-License-Identifier: (CC-BY-4.0 OR GPL-3.0-or-later) -->
+<!-- This file is part of Network Engineering Pro -->
 <!--
 
 Network Engineering Pro (NetEng-Pro), a Free/Libre and Open Source Community
@@ -38,7 +39,7 @@ See the GNU General Public License for more details.
 ---
 
 Author: Scott Lopez
-Email: <website@neteng.pro>
+Email: <contact@neteng.pro>
 Web: <https://bio.neteng.pro>
 
 -->
@@ -132,17 +133,24 @@ provide _Best Practices_ documentation for beginners, among other content.
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro/)**, a Free/Libre and Open Source Software Community<br />  
-Copyright &copy; 2024 **[Scott Lopez](https://bio.neteng.pro)**
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open  
+Source Software Community<br />
+Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
-This material comes with ABSOLUTELY NO WARRANTY.
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published  
+by the Free Software Foundation, either version 3 of the  
+License, or (at your option) any later version.
 
-_Unless otherwise noted, NetEng-Pro in its' entirety is available, exclusively, under the following licenses._
+This material is free to distribute, remix, adapt, and build  
+upon for any purpose, including commercial use. As free  
+software, it can be redistributed and modified under the  
+[specified terms](#gnu-gpl).
 
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**. You are free to: (a) share and (b) adapt upon this material for any purpose, even commercially.
+NetEng-Pro is provided **_as is_** and **_as available_** without any  
+warranties, express or implied. The Licensor makes no  
+representations or guarantees regarding the Licensed Material  
+and assumes no liability for its use.
 
-This is free software, and you are welcome to redistribute it under the **[GNU GPL 3.0](https://spdx.org/licenses/GPL-3.0-or-later.html)** or later.
-
-For details, see [Copyright and Licensing](./LICENSE.md).
+For details, see [Copyright and Licensing](/LICENSE.md).
 
 </code>

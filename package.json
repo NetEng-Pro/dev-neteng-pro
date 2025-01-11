@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Free/Libre & Open Source Software, security, and digital privacy reference material for Android & Linux",
   "private": true,
-  "keywords": [ "android, linux, open-source, opensource, floss, foss, security, privacy, cybersecurity"
+  "keywords": [
+    "android, linux, open-source, open source, floss, foss, security, privacy, cybersecurity"
   ],
   "browserslist": [
     "defaults and fully supports es6-module",
