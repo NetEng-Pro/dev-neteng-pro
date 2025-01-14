@@ -1,14 +1,10 @@
 {
   "name": "nwpro-web",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Free/Libre & Open Source Software, security, and digital privacy reference material for Android & Linux",
   "private": true,
   "keywords": [
     "android, linux, open-source, open source, floss, foss, security, privacy, cybersecurity"
-  ],
-  "browserslist": [
-    "defaults and fully supports es6-module",
-    "maintained node versions"
   ],
   "license": "(CC-BY-4.0 OR GPL-3.0-or-later)",
   "author": "Scott Lopez",
