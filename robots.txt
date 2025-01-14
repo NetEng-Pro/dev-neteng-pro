@@ -6,7 +6,6 @@ Disallow: *.svg$
 Disallow: *.png$
 Disallow: *.jpg$
 Disallow: *.json$
-Disallow: /ref
 Disallow: /css
 Disallow: /img
 Disallow: /js

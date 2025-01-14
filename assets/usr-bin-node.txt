@@ -1,0 +1,18 @@
+lrwxrwxrwx  1 root   35 Feb 22  2022 browserslist -> ../share/nodejs/browserslist/cli.js*
+lrwxrwxrwx  1 root   38 Sep 30  2021 esparse -> ../share/nodejs/esprima/bin/esparse.js*
+lrwxrwxrwx  1 root   41 Sep 30  2021 esvalidate -> ../share/nodejs/esprima/bin/esvalidate.js*
+lrwxrwxrwx  1 root   25 Jan  1  2022 he -> ../share/nodejs/he/bin/he*
+lrwxrwxrwx  1 root   38 Jan 28  2022 js-yaml -> ../share/nodejs/js-yaml/bin/js-yaml.js*
+lrwxrwxrwx  1 root   32 Apr 26  2024 json5 -> ../share/nodejs/json5/lib/cli.js*
+lrwxrwxrwx  1 root   35 Nov 21  2021 loose-envify -> ../share/nodejs/loose-envify/cli.js*
+lrwxrwxrwx  1 root   31 Feb 23  2022 mocha -> ../share/nodejs/mocha/bin/mocha*
+lrwxrwxrwx  1 root   37 Feb 17  2022 nanoid -> ../share/nodejs/nanoid/bin/nanoid.cjs*
+-rwxr-xr-x  1 root  27K Jun  7  2024 node*
+lrwxrwxrwx  1 root    4 Jun  7  2024 nodejs -> node*
+lrwxrwxrwx  1 root   31 Nov 17 10:01 npm -> /usr/local/node-20.18.0/bin/npm*
+lrwxrwxrwx  1 root   29 Nov 11  2020 rimraf -> ../share/nodejs/rimraf/bin.js*
+lrwxrwxrwx  1 root   36 Sep 14  2021 semver -> ../share/nodejs/semver/bin/semver.js*
+lrwxrwxrwx  1 root   36 Nov 16  2021 sshpk-conv -> ../share/nodejs/sshpk/bin/sshpk-conv*
+lrwxrwxrwx  1 root   36 Nov 16  2021 sshpk-sign -> ../share/nodejs/sshpk/bin/sshpk-sign*
+lrwxrwxrwx  1 root   38 Nov 16  2021 sshpk-verify -> ../share/nodejs/sshpk/bin/sshpk-verify*
+lrwxrwxrwx  1 root   32 Feb  6  2022 yarnpkg -> ../share/nodejs/yarn/bin/yarn.js*
