@@ -1,7 +1,8 @@
 {
   "name": "nwpro-web",
   "version": "0.0.3",
-  "description": "Free/Libre & Open Source Software, security, and digital privacy reference material for Android & Linux",
+  "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
+  "homepage": "https://netwk.pro",
   "private": true,
   "keywords": [
     "android, linux, open-source, open source, floss, foss, security, privacy, cybersecurity"
