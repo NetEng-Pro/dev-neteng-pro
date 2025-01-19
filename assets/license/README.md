@@ -28,7 +28,8 @@ II. GNU General Public License
 
 Network Engineering Pro is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License ("GNU GPL") as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-This material is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+This material is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
 
 See the GNU General Public License for more details.
 
@@ -65,30 +66,23 @@ Web: <https://bio.neteng.pro>
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
 **[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
-and Open Source Software Community<br /> Copyright &copy; 2024-2025
-**[Scott Lopez](https://bio.neteng.pro)**
-
-NetEng-Pro is provided as is and as available without any warranties, express or
-implied. The Licensor makes no representations or guarantees regarding the
-Licensed Material and assumes no liability for its use.
-
-> _Unless otherwise noted, Network Engineering Pro ("NetEng-Pro") in its'
-> entirety is available, exclusively, under the licenses outlined herein._
+and Open Source Software Community<br />
+Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
 </code>
+
+NetEng-Pro is provided **_as is_** and **_as available_** without any warranties, express or implied. The Licensor makes no representations or guarantees regarding the Licensed Material and assumes no liability for its use.
+
+> > _Unless otherwise noted, Network Engineering Pro (NetEng-Pro) in its'
+> > entirety is available exclusively under the licenses outlined herein._
 
 ---
 
 ### <a id="neteng-pro">_Use of Abbreviated Business Name_</a>
 
-For clarity, the community's _full business name_, **Network Engineering Pro**,
-and its abbreviated name, **NetEng-Pro**, are legally equivalent. All references
-to 'NetEng-Pro,' whether in text or code, shall be interpreted as references to
-the full business name with equal authority.
+For clarity, the community's _full business name_, **Network Engineering Pro**, and its abbreviated name, **NetEng-Pro**, are legally equivalent. All references to 'NetEng-Pro,' whether in text or code, shall be interpreted as references to the full business name with equal authority.
 
-**This equivalency applies across all media and contexts, including but not
-limited to: legal notices, website content, GitHub repositories and code, as
-well as any business-related documentation.**
+**This equivalency applies across all media and contexts, including but not limited to: legal notices, website content, GitHub repositories and code, as well as any business-related documentation.**
 
 ---
 
@@ -96,33 +90,30 @@ well as any business-related documentation.**
 
 Network Engineering Pro is available under the following licenses:
 
-- **[Creative Commons Attribution 4.0 International](#cc-by)** ("CC BY 4.0")
-- **[GNU General Public License](#gnu-gpl)** ("GNU GPL"), either version 3 of
+- **[Creative Commons Attribution 4.0 International](#cc-by)** ('CC BY 4.0')
+- **[GNU General Public License](#gnu-gpl)** ('GNU GPL'), either version 3 of
   the license, or (at your option) any later version
 
 &nbsp;
 
-### <a id="questions">_Are you sure you can do that?_</a>
+#### <a id="questions">_Are you sure you can do that?_</a>
 
-- "You may offer the licensed material under other licenses in addition to the
-  CC license (a practice commonly referred to as “dual licensing”)."
+- "You may offer the licensed material under other licenses in addition to the CC license (a practice commonly referred to as 'dual licensing')."
 
-  [Separate agreements | Creative Commons FAQ](https://creativecommons.org/faq/#can-i-enter-into-separate-or-supplemental-agreements-with-users-of-my-work)
+  _[Separate agreements | Creative Commons FAQ](https://creativecommons.org/faq/#can-i-enter-into-separate-or-supplemental-agreements-with-users-of-my-work)_
 
-- Both the [GNU GPL](https://www.gnu.org/licenses/license-list.html#GPLOther)
-  and [CC BY 4.0](https://www.gnu.org/licenses/license-list.html#ccby) are
-  categorized as "free licenses, compatible with the GNU GPL."
+- Both the [GNU GPL](https://www.gnu.org/licenses/license-list.html#GPLOther) and [CC BY 4.0](https://www.gnu.org/licenses/license-list.html#ccby) are categorized as "free licenses, compatible with the GNU GPL."
 
-  [Licenses for Other Works | GNU - Various Licenses and Comments About Them](https://www.gnu.org/licenses/license-list.html#OtherLicenses)
+  _[Licenses for Other Works | GNU - Various Licenses and Comments About Them](https://www.gnu.org/licenses/license-list.html#OtherLicenses)_
 
 - [What does it mean to say a license is “compatible with the GPL?" | GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.html#WhatDoesCompatMean)
 
 &nbsp;
 
-### <a id="contact">_Contact_</a>
+#### <a id="contact">_Contact_</a>
 
 For questions not covered here, or to request permissions not covered by the
-scope of either license, please email me at <contact@neteng.pro>.
+scope of either license, please email me at `contact (at) neteng.pro`.
 
 <sub>[Top](#top)</sub>
 
@@ -139,20 +130,11 @@ Commons Attribution 4.0 International** ("CC BY 4.0")
 [<img style="display: inline-block; height: 18px !important; margin-left: 3px; vertical-align: text-bottom; text-decoration: none;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" />](https://creativecommons.org/licenses/by/4.0/)
 [<img style="display: inline-block; height: 18px !important; margin-left: 3px; vertical-align: text-bottom; text-decoration: none;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" />](https://creativecommons.org/licenses/by/4.0/).
 
-Per the terms of the License, you are free to distribute, remix, adapt, and
-build upon the Licensed Material for any purpose, even commercially. You must
-give appropriate credit, provide a link to the License, and indicate if changes
-were made.
+Per the terms of the License, you are free to distribute, remix, adapt, and build upon the Licensed Material for any purpose, even commercially. You must give appropriate credit, provide a link to the License, and indicate if changes were made.
 
-The Licensor offers the Licensed Material as-is and as-available, and makes no
-representations or warranties of any kind concerning the Licensed Material,
-whether express, implied, statutory, or other. This includes, without
-limitation, warranties of title, merchantability, fitness for a particular
-purpose, non-infringement, absence of latent or other defects, accuracy, or the
-presence or absence of errors, whether or not known or discoverable.
+The Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable.
 
-Permissions beyond the scope of this License—or instead of those permitted by
-this License—may be available as further defined within this document.
+Permissions beyond the scope of this License—or instead of those permitted by this License—may be available as further defined within this document.
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
@@ -167,21 +149,13 @@ this License—may be available as further defined within this document.
 
 ### <a id="gnu-gpl">GNU General Public License</a>
 
-<sup>Formats: [Markdown](assets/license/COPYING.md) |
-[ODT](assets/license/COPYING.odt)</sup>
+<sup>Formats: [Markdown](assets/license/COPYING.md) | [ODT](assets/license/COPYING.odt)</sup>
 
-Network Engineering Pro (NetEng-Pro) is free software: you can redistribute it
-and/or modify it under the terms of the **GNU General Public License** ("GNU
-GPL") as published by the [Free Software Foundation](https://www.fsf.org/),
-either version 3 of the License, or (at your option) any later version.
+Network Engineering Pro (NetEng-Pro) is free software: you can redistribute it and/or modify it under the terms of the **GNU General Public License** ("GNU GPL") as published by the [Free Software Foundation](https://www.fsf.org/), either version 3 of the License, or (at your option) any later version.
 
-This material is distributed in the hope that it will be useful, but WITHOUT ANY
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE. See the GNU General Public License for more details.
+This material is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with
-this material. If not, see
-<[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
+You should have received a copy of the GNU General Public License along with this material. If not, see <[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
@@ -201,6 +175,9 @@ this material. If not, see
 _**Website base structure provided by HTML5 Boilerplate:**_  
 <https://html5boilerplate.com/>
 
+</code>
+
+```
 ################################################################################
 
 Copyright (c) HTML5 Boilerplate
@@ -221,8 +198,7 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-</code>
+```
 
 <sub>[Top](#top)</sub>
 
@@ -230,13 +206,21 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community<br />
+**[Network Engineering Pro](https://neteng.pro)** (NetEng-Pro), a Free/Libre
+and Open Source Software Community<br />
 Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This material is free to distribute, remix, adapt, and build upon for any purpose, including commercial use. As free software, it can be redistributed and modified under the [specified terms](#gnu-gpl).
-
-NetEng-Pro is provided **_as is_** and **_as available_** without any warranties, express or implied. The Licensor makes no representations or guarantees regarding the Licensed Material and assumes no liability for its use.
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
+the **[GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html)**, as published
+by the Free Software Foundation,  
+either version 3 of the License, or (at your option) any later version.
 
 </code>
+
+This material is free to distribute, remix, adapt, and build upon for any
+purpose, including commercial use. As free software, it can be redistributed and
+modified under the [specified terms](#gnu-gpl).
+
+NetEng-Pro is provided **_as is_** and **_as available_** without any
+warranties, express or implied. The Licensor makes no representations or
+guarantees regarding the Licensed Material and assumes no liability for its use.

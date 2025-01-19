@@ -1,6 +1,6 @@
 {
   "name": "nwpro-web",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "homepage": "https://netwk.pro",
   "private": true,
@@ -9,10 +9,6 @@
   ],
   "license": "(CC-BY-4.0 OR GPL-3.0-or-later)",
   "author": "Scott Lopez",
-  "browserslist": [
-    "defaults and fully supports es6-module",
-    "maintained node versions"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.config.dev.js",
