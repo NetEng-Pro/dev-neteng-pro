@@ -1,0 +1,11 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agejson$
+Disallow: *.svg$
+Disallow: *.png$
+Disallow: *.jpg$
+Disallow: *.json$
+Disallow: /css
+Disallow: /img
+Disallow: /js
