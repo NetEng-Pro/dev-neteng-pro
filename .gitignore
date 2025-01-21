@@ -7,7 +7,9 @@
 
 ### Custom Ignores ###
 python-venv/
-
+server.mjs
+crypto.mjs
+tests.mjs
 
 ### Dreamweaver ###
 # DW Dreamweaver added files
