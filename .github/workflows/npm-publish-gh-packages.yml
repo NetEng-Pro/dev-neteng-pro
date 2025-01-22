@@ -16,17 +16,17 @@ strategy:
     # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
 jobs:
-build:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Check Out
-      uses: actions/checkout@v4
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm test
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm test
 
   publish-gpr:
     needs: build
