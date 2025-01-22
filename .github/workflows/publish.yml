@@ -1,4 +1,3 @@
----
 name: Node.js Package
 
 on:
@@ -16,7 +15,7 @@ jobs:
     outputs:
       node-version: ${{ steps.node-setup.outputs.node-version }}
     steps:
-      - name: Check Out
+      - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Node.js
         id: node-setup
@@ -56,4 +55,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-...
