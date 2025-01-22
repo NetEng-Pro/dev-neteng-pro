@@ -69,6 +69,8 @@ jobs:
           git config --global user.name "SunDevil311 "
       - name: Increment version
         run: npm version patch
+      - name: Copy package.json to dist directory
+        run: cp package.json dist/
       - name: Publish package
         working-directory: ./dist
         run: npm publish
