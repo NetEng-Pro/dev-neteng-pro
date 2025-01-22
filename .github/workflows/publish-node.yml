@@ -6,6 +6,7 @@ name: Node.js Package
 on:
   release:
     types: [created]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,6 +21,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm test
+      - run: npm run build # Ensure this script builds to the dist directory
 
   publish-gpr:
     needs: build
@@ -38,7 +40,7 @@ jobs:
           #registry-url: https://npm.pkg.github.com/
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish 
-      - run: npm run start
+      - working-directory: ./dist # Set working directory to dist
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
