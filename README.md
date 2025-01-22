@@ -46,26 +46,32 @@ Web: <https://bio.neteng.pro>
 
 # Network Engineering Pro
 
-Here’s an optimized and refined version of your introduction:
+**Network Engineering Pro (NetEng-Pro)** is a dedicated community focused on
+providing **guides, reference materials, and resources** for **Free/Libre and
+Open Source Software (FLOSS)**, with a primary emphasis on **Android** and
+select **Linux projects**.
 
----
-
-### Welcome to Network Engineering Pro!
-
-**Network Engineering Pro (NetEng-Pro)** is a dedicated community focused on providing **guides, reference materials, and resources** for **Free/Libre and Open Source Software (FLOSS)**, with a primary emphasis on **Android** and select **Linux projects**.
-
-We advocate for **truly free software**—a distinction that goes beyond cost. To understand the deeper meaning of “free” in this context, check out:
+We advocate for **truly free software**—a distinction that goes beyond cost. To
+understand the deeper meaning of “free” in this context, check out:
 
 - [The FSF/GNU definition of free software](https://www.gnu.org/philosophy/free-sw.html)
 - [A less technical explanation](https://itsfoss.com/what-is-foss/#free-in-free-and-open-source-software-does-not-mean-free-of-cost)
 
-As a proud **member of the [Free Software Foundation (FSF)](https://www.fsf.org/)**, our mission is to promote and advance software freedom, aligning with the [FSF/GNU principles](https://www.gnu.org/philosophy/free-sw.html#fs-definition) and the four freedoms. However, we critically evaluate all available solutions to ensure the best approach for privacy, security, and user empowerment.
+As a proud **member of the
+[Free Software Foundation (FSF)](https://www.fsf.org/)**, our mission is to
+promote and advance software freedom, aligning with the
+[FSF/GNU principles](https://www.gnu.org/philosophy/free-sw.html#fs-definition)
+and the four freedoms. However, we critically evaluate all available solutions
+to ensure the best approach for privacy, security, and user empowerment.
 
 ### Our Focus Areas:
 
-🔹 **Privacy & Security** – Covering topics like **browser hardening, privacy-focused DNS services, and secure communications**  
-🔹 **FLOSS Advocacy** – Encouraging ethical software choices and community-driven development  
-🔹 **Technical Discussions & Guides** – Providing in-depth resources to help users navigate the world of open-source technology
+🔹 **Privacy & Security** – Covering topics like **browser hardening,
+privacy-focused DNS services, and secure communications**  
+🔹 **FLOSS Advocacy** – Encouraging ethical software choices and
+community-driven development  
+🔹 **Technical Discussions & Guides** – Providing in-depth resources to help
+users navigate the world of open-source technology
 
 🚀 Stay tuned for updates as we explore these crucial topics in depth!
 
@@ -73,15 +79,22 @@ As a proud **member of the [Free Software Foundation (FSF)](https://www.fsf.org/
 
 ## Mission
 
-At **Network Engineering Pro (NetEng-Pro)**, we champion a better, more secure digital world through **free and open source solutions**.
+At **Network Engineering Pro (NetEng-Pro)**, we champion a better, more secure
+digital world through **free and open source solutions**.
 
 Our mission:  
-1️⃣ **Advocate for Free Software & Software Freedom** – Amplifying Android and Linux FLOSS apps.  
-2️⃣ 📚 **Create Actionable Resources** – From browser hardening guides to cybersecurity tips.  
-3️⃣ 🔒 **Raise Awareness** – Cybersecurity and digital privacy are at the core of what we do.  
-4️⃣ 💡 **Empower Through Guidance** – Secure your devices, protect your networks, and reclaim your privacy.
+1️⃣ **Advocate for Free Software & Software Freedom** – Amplifying Android and
+Linux FLOSS apps.  
+2️⃣ 📚 **Create Actionable Resources** – From browser hardening guides to
+cybersecurity tips.  
+3️⃣ 🔒 **Raise Awareness** – Cybersecurity and digital privacy are at the core of
+what we do.  
+4️⃣ 💡 **Empower Through Guidance** – Secure your devices, protect your networks,
+and reclaim your privacy.
 
-Because we believe in **empowering choices, securing privacy with open solutions**, we’re more than a community—we’re a movement for secure, open, and private technology.
+Because we believe in **empowering choices, securing privacy with open
+solutions**, we’re more than a community—we’re a movement for secure, open, and
+private technology.
 
 🌐 **Let’s build a safer, more open future together.**
 
@@ -99,12 +112,15 @@ Because we believe in **empowering choices, securing privacy with open solutions
 
 **Recognizing the limitations of individual-driven privacy websites and outdated
 lists, we are dedicated to offering a broad range of current and diverse views
-on privacy-centric apps and projects.** We wholeheartedly encourage (and expect) community input to enrich and maintain our collective knowledge base.
+on privacy-centric apps and projects.** We wholeheartedly encourage (and expect)
+community input to enrich and maintain our collective knowledge base.
 
 Individual-driven projects and lists inevitably become outdated quickly; it is
 our belief that effective lists and privacy documentation **_MUST_** be
-community-driven and maintained. [NetEng-Pro Discussions](https://discuss.neteng.pro) on GitHub will serve as our primary collaboration
-platform. Slack and a Stack Overflow Team are also available to community members.
+community-driven and maintained.
+[NetEng-Pro Discussions](https://discuss.neteng.pro) on GitHub will serve as our
+primary collaboration platform. Slack and a Stack Overflow Team are also
+available to community members.
 
 &nbsp;
 
@@ -114,17 +130,29 @@ list is intended as a starting point. Once complete, I anticipate that it will
 evolve through collaborative efforts, with the community leading Discussions and
 driving updates.
 
-> _The starting point for this project is the [Best-FOSS-Apps-for-Android](https://github.com/NetEng-Pro/Best-FOSS-Apps-for-Android) repository. The repo was forked from a now-abandoned project. Some edits have been made, but it needs a rewrite (the original author used a lot of foreign characters) and community review / input._
+> _The starting point for this project is the
+> [Best-FOSS-Apps-for-Android](https://github.com/NetEng-Pro/Best-FOSS-Apps-for-Android)
+> repository. The repo was forked from a now-abandoned project. Some edits have
+> been made, but it needs a rewrite (the original author used a lot of foreign
+> characters) and community review / input._
 
 ---
 
 ## 🚀 About Me
 
-I'm a Network Security Enginneer specializing in [Palo Alto Networks](https://www.paloaltonetworks.com) solutions, including PAN-OS [Next-Gen Firewalls](https://docs.paloaltonetworks.com/pan-os) (NGFWs) and [Panorama management server](https://docs.paloaltonetworks.com/panorama).
+I'm a Network Security Enginneer specializing in
+[Palo Alto Networks](https://www.paloaltonetworks.com) solutions, including
+PAN-OS [Next-Gen Firewalls](https://docs.paloaltonetworks.com/pan-os) (NGFWs)
+and [Panorama management server](https://docs.paloaltonetworks.com/panorama).
 
-With several years of experience in Android development, I have a strong passion for integrating free and open source software (FLOSS) into my workflow. My journey began with a desire to replace proprietary apps with open source alternatives, and ever since, I’ve been exploring and curating the best FLOSS apps available.
+With several years of experience in Android development, I have a strong passion
+for integrating free and open source software (FLOSS) into my workflow. My
+journey began with a desire to replace proprietary apps with open source
+alternatives, and ever since, I’ve been exploring and curating the best FLOSS
+apps available.
 
-Additionally, I've been exploring various self-hosted solutions and plan to provide _Best Practices_ documentation for beginners, among other content.
+Additionally, I've been exploring various self-hosted solutions and plan to
+provide _Best Practices_ documentation for beginners, among other content.
 
 &NonBreakingSpace; <!-- space for clarity -->
 
@@ -143,17 +171,25 @@ Additionally, I've been exploring various self-hosted solutions and plan to prov
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community<br />
-Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
+and Open Source Software Community<br /> Copyright &copy; 2024-2025
+**[Scott Lopez](https://bio.neteng.pro)**
 
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation,  
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
+the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published
+by the Free Software Foundation,  
 either version 3 of the License, or (at your option) any later version.
 
 </code>
 
-This material is free to distribute, remix, adapt, and build upon for any purpose, including commercial use.  
-As free software, it can be redistributed and modified under the [specified terms](https://raw.githubusercontent.com/NetEng-Pro/dev-neteng-pro/refs/heads/master/assets/LICENSE.md#gnu-gpl).
+This material is free to distribute, remix, adapt, and build upon for any
+purpose, including commercial use.  
+As free software, it can be redistributed and modified under the
+[specified terms](https://raw.githubusercontent.com/NetEng-Pro/dev-neteng-pro/refs/heads/master/assets/LICENSE.md#gnu-gpl).
 
-NetEng-Pro is provided **_as is_** and **_as available_** without any warranties, express or implied. The Licensor makes no representations or guarantees regarding the Licensed Material and assumes no liability for its use.
+NetEng-Pro is provided **_as is_** and **_as available_** without any
+warranties, express or implied. The Licensor makes no representations or
+guarantees regarding the Licensed Material and assumes no liability for its use.
 
-For details, see [Copyright and Licensing](https://raw.githubusercontent.com/NetEng-Pro/dev-neteng-pro/refs/heads/master/assets/LICENSE.md).
+For details, see
+[Copyright and Licensing](https://raw.githubusercontent.com/NetEng-Pro/dev-neteng-pro/refs/heads/master/assets/LICENSE.md).
