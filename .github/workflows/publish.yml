@@ -36,6 +36,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - npm: npm install
       - run: npm ci
       - run: npm test
 
@@ -55,8 +56,10 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-
-      - run: npm ci
-      - run: npm publish
+            ${{ runner.os }install
+      - npm: npm install
+      - run: npm ci  
+      - npm: npm run build
+      #- run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
