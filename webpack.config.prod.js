@@ -78,8 +78,6 @@ module.exports = merge(common, {
         { from: '404.html', to: '404.html' },
         { from: 'bimi-svg-tiny-ps.xml', to: 'bimi-svg-tiny-ps.xml' },
         { from: 'site.webmanifest', to: 'site.webmanifest' },
-        { from: 'package.json', to: 'package.json' },
-        { from: 'package-lock.json', to: 'package-lock.json' },
       ],
     }),
   ],
