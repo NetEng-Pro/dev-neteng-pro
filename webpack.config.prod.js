@@ -5,6 +5,9 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
+  output: {
+    chunkFormat: 'array-push', // Specify the chunk format
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
@@ -20,7 +23,7 @@ module.exports = merge(common, {
         { from: 'favicon-apple.png', to: 'favicon-apple.png' },
         { from: 'favicon-512.png', to: 'favicon-512.png' },
         { from: 'favicon-192.png', to: 'favicon-192.png' },
-        { from: 'favicon-light.ico', to: 'favicon-ligt.ico' },
+        { from: 'favicon-light.ico', to: 'favicon-light.ico' },
         { from: 'favicon-light.svg', to: 'favicon-light.svg' },
         { from: 'legal.html', to: 'legal.html' },
         { from: 'LICENSE.md', to: 'LICENSE.md' },

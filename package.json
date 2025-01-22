@@ -1,6 +1,6 @@
 {
   "name": "nwpro-web",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "homepage": "https://netwk.pro",
   "private": false,
@@ -24,7 +24,8 @@
     "not dead"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha 'test/**/*.js'",
+    "lint": "eslint . --ext .js",
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js"
   },
@@ -37,7 +38,11 @@
   },
   "main": "index.html",
   "devDependencies": {
+    "@eslint/js": "^9.18.0",
     "copy-webpack-plugin": "^11.0.0",
+    "eslint": "^9.18.0",
+    "eslint-plugin-mocha": "^10.5.0",
+    "globals": "^15.14.0",
     "html-webpack-plugin": "^5.6.0",
     "mocha": "^11.0.1",
     "webpack": "^5.91.0",
