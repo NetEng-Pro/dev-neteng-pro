@@ -5,13 +5,12 @@ on:
     types: [created]
   workflow_dispatch:
 
-strategy:
-  matrix:
-    node-version: [20.x, 22.x]
-
 jobs:
   setup:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
     outputs:
       node-version: ${{ steps.node-setup.outputs.node-version }}
     steps:
@@ -26,6 +25,9 @@ jobs:
   build:
     needs: setup
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
     steps:
       - name: Cache npm dependencies
         uses: actions/cache@v3
@@ -40,6 +42,9 @@ jobs:
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
     permissions:
       contents: read
       packages: write
