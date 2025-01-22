@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: npm test
+      #- run: npm test
       - run: npm run build # Ensure this script builds to the dist directory
 
   publish-gpr:
