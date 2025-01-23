@@ -1,6 +1,6 @@
 {
   "name": "@neteng-pro/nwpro-web",
-  "version": "0.1.11",
+  "version": "0.1.1",
   "private": false,
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "keywords": [
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "test": "mocha 'test/**/*.js'",
-    "lint": "eslint . --ext .js",
+    "lint": "eslint .",
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js"
   },
