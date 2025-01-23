@@ -7,7 +7,7 @@ name: Deploy static content to Pages
 
 on:
   workflow_run:
-    workflows: ["Build, Test, and Publish Webpack"]
+    workflows: ["Build and Test Webpack (npmjs)"]
     types:
       - completed
   workflow_dispatch:
@@ -45,4 +45,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
- 

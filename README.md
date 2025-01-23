@@ -50,7 +50,7 @@ Web: <https://bio.neteng.pro>
 **Network Engineering Pro (NetEng-Pro)** is a dedicated community focused on
 providing guides, reference materials, and resources for **Free/Libre and Open
 Source Software (FLOSS)**, with a primary emphasis on **Android** and select
-**Linux** projects.  
+**Linux** projects.
 
 _**Table of Contents**_
 
@@ -117,7 +117,7 @@ private technology.
 
 🤝 Join with us. Collaborate with us. Share our vision.
 
-- Community Signup 📃: https://join.neteng.pro
+- Community Signup 📃: <https://join.neteng.pro>
 
 > 🔒 **NOTE:** Community signups are end-to-end encrypted for your protection.
 
@@ -199,9 +199,8 @@ provide _Best Practices_ documentation for beginners, among other content.
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
-and Open Source Software Community<br /> Copyright &copy; 2024-2025
-**[Scott Lopez](https://bio.neteng.pro)**
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community<br />
+Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
 Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
 the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published
@@ -212,7 +211,7 @@ either version 3 of the License, or (at your option) any later version.
 
 This material is free to distribute, remix, adapt, and build upon for any
 purpose, including commercial use. As free software, it can be redistributed and modified under the
-[specified terms](LICENSE.md).
+[specified terms](LICENSE.md#gnu-gpl).
 
 NetEng-Pro is provided **_as is_** and **_as available_** without any
 warranties, express or implied. The Licensor makes no representations or
