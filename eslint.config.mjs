@@ -12,9 +12,9 @@ export default [
     files: ["**/*.js"],
     languageOptions: {
       sourceType: "commonjs",
-    },
-    parserOptions: {
-      ecmaVersion: 2022,
+      parserOptions: {
+        ecmaVersion: 2022,
+      },
     },
     globals: {
       ...globals.browser,
@@ -23,12 +23,7 @@ export default [
       ...globals.mocha, // Add Mocha globals
     },
     // Note: there should be no other properties in this object
-    ignores: [
-      "!eslintconfig.mjs",
-      "**/*.mjs",
-      "**/.vscode",
-      "**/node_modules"
-    ],
+    ignores: ["!eslintconfig.mjs", "**/*.mjs", "**/.vscode", "**/node_modules"],
     extends: [
       "eslint:recommended", // Extend recommended ESLint rules
       "plugin:mocha/recommended", // Extend recommended Mocha plugin rules
@@ -39,9 +34,9 @@ export default [
       "mocha/no-exclusive-tests": "error", // Prevents accidental `describe.only` or `it.only`
       "mocha/no-skipped-tests": "warn", // Warns against skipped tests (`it.skip`)
       "mocha/no-hooks-for-single-case": "warn", // Avoids unnecessary `beforeEach` hooks in single tests
-      indent: ["error", 2],
-      quotes: ["error", "single"],
-      semi: ["error", "always"],
+      "indent": ["error", 2],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
     },
   },
   pluginJs.configs.recommended,
