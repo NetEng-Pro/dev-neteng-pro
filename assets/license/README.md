@@ -1,9 +1,10 @@
-<!-- SPDX-License-Identifier: (CC-BY-4.0 OR GPL-3.0-or-later) -->
+<!-- SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later -->
 <!-- This file is part of Network Engineering Pro -->
+
 <!--
 
 Network Engineering Pro (NetEng-Pro), a Free/Libre and Open Source Community
-Copyright © 2024 Scott Lopez
+Copyright © 2024-2025 Scott Lopez
 
 ---
 
@@ -206,13 +207,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro)** (NetEng-Pro), a Free/Libre
-and Open Source Software Community<br />
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community<br />
 Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
-the **[GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html)**, as published
-by the Free Software Foundation,  
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation,  
 either version 3 of the License, or (at your option) any later version.
 
 </code>
