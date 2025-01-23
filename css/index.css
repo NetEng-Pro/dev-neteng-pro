@@ -43,15 +43,19 @@ Email: <contact@neteng.pro>
 Web: <https://bio.neteng.pro>
 */
 
-index-h1 {
-  margin-left: auto;
-  margin-right: auto;
+.center-element {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
 }
 
-index-h2 {
-  font-size: 20px;
+h1 .index1 {
+  text-align: center;
+}
+
+h2 .index2 {
   text-transform: lowercase;
   font-variant: small-caps;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }

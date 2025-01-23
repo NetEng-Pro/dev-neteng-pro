@@ -1,9 +1,10 @@
-<!-- SPDX-License-Identifier: (CC-BY-4.0 OR GPL-3.0-or-later) -->
+<!-- SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later -->
 <!-- This file is part of Network Engineering Pro -->
+
 <!--
 
 Network Engineering Pro (NetEng-Pro), a Free/Libre and Open Source Community
-Copyright © 2024 Scott Lopez
+Copyright © 2024-2025 Scott Lopez
 
 ---
 
@@ -44,15 +45,29 @@ Web: <https://bio.neteng.pro>
 
 -->
 
-# Network Engineering Pro
+# <a id="top">Network Engineering Pro</a>
 
 **Network Engineering Pro (NetEng-Pro)** is a dedicated community focused on
-providing **guides, reference materials, and resources** for **Free/Libre and
-Open Source Software (FLOSS)**, with a primary emphasis on **Android** and
-select **Linux projects**.
+providing guides, reference materials, and resources for **Free/Libre and Open
+Source Software (FLOSS)**, with a primary emphasis on **Android** and select
+**Linux** projects.
 
-We advocate for **truly free software**—a distinction that goes beyond cost. To
-understand the deeper meaning of “free” in this context, check out:
+_**Table of Contents**_
+
+- [About Us](#about-us)
+  - [Focus Areas](#focus)
+- [Mission](#mission)
+- [Collective Knowledge](#cknow)
+- [About Me](#about-me)
+
+&nbsp;
+
+---
+
+## <a id="about-us">About Us</a>
+
+NetEng-Pro advocates for **truly free software**—a distinction that goes beyond
+cost. To understand the deeper meaning of “free” in this context, check out:
 
 - [The FSF/GNU definition of free software](https://www.gnu.org/philosophy/free-sw.html)
 - [A less technical explanation](https://itsfoss.com/what-is-foss/#free-in-free-and-open-source-software-does-not-mean-free-of-cost)
@@ -64,7 +79,7 @@ promote and advance software freedom, aligning with the
 and the four freedoms. However, we critically evaluate all available solutions
 to ensure the best approach for privacy, security, and user empowerment.
 
-### Our Focus Areas:
+### <a id="focus">Our Focus Areas</a>
 
 🔹 **Privacy & Security** – Covering topics like **browser hardening,
 privacy-focused DNS services, and secure communications**  
@@ -73,11 +88,13 @@ community-driven development
 🔹 **Technical Discussions & Guides** – Providing in-depth resources to help
 users navigate the world of open-source technology
 
-🚀 Stay tuned for updates as we explore these crucial topics in depth!
+&nbsp;
+
+<sub>[Top](#top)</sub>
 
 ---
 
-## Mission
+## <a id="mission">Mission</a>
 
 At **Network Engineering Pro (NetEng-Pro)**, we champion a better, more secure
 digital world through **free and open source solutions**.
@@ -100,15 +117,17 @@ private technology.
 
 🤝 Join with us. Collaborate with us. Share our vision.
 
-- Community Signup 📃: https://join.neteng.pro
+- Community Signup 📃: <https://join.neteng.pro>
 
 > 🔒 **NOTE:** Community signups are end-to-end encrypted for your protection.
 
-&NonBreakingSpace; <!-- space for clarity -->
+&nbsp; <!-- space for clarity -->
+
+<sub>[Top](#top)</sub>
 
 ---
 
-## 💡 Collective Knowledge
+## <a id="cknow">💡 Collective Knowledge</a>
 
 **Recognizing the limitations of individual-driven privacy websites and outdated
 lists, we are dedicated to offering a broad range of current and diverse views
@@ -124,21 +143,28 @@ available to community members.
 
 &nbsp;
 
-_Our primary short-term objective is to curate an up-to-date list of recommended
-FLOSS (and occasionally notable closed-source) apps for Android users._ This
-list is intended as a starting point. Once complete, I anticipate that it will
-evolve through collaborative efforts, with the community leading Discussions and
-driving updates.
+### Current Project
 
-> _The starting point for this project is the
+Our primary short-term objective is to curate an up-to-date list of recommended
+FLOSS (and occasionally notable closed-source) apps for Android users.
+
+> **The starting point for this project is the
 > [Best-FOSS-Apps-for-Android](https://github.com/NetEng-Pro/Best-FOSS-Apps-for-Android)
-> repository. The repo was forked from a now-abandoned project. Some edits have
-> been made, but it needs a rewrite (the original author used a lot of foreign
-> characters) and community review / input._
+> repository.**
+
+> _The repo was forked from a now-abandoned project. Some edits have been made,
+> but it needs a rewrite (the original author used a lot of foreign characters)
+> and community review / input._
+
+&nbsp;
+
+<sub>[Top](#top)</sub>
 
 ---
 
-## 🚀 About Me
+## <a id="about-me">🚀 About Me</a>
+
+[<img src="img/sd311.png" width="100px" height="100px" alt="SunDevil311" />](https://github.com/SunDevil311)
 
 I'm a Network Security Enginneer specializing in
 [Palo Alto Networks](https://www.paloaltonetworks.com) solutions, including
@@ -154,15 +180,17 @@ apps available.
 Additionally, I've been exploring various self-hosted solutions and plan to
 provide _Best Practices_ documentation for beginners, among other content.
 
-&NonBreakingSpace; <!-- space for clarity -->
+&nbsp; <!-- space for clarity -->
 
 ## 🔗 Links
 
-| [![linktr.ee](https://img.shields.io/badge/linktree-43E55E?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/scottlopez)   | [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/scottlopez) |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![mastodon](https://img.shields.io/badge/Mastodon-6364FF?style=for-the-badge&logo=Mastodon&logoColor=white)](https://noc.social/@sundevil311) | [![xda](https://img.shields.io/badge/xda%20developers-2DAAE9?style=for-the-badge&logo=xda-developers&logoColor=white)](https://xda.neteng.pro)        |
+| [![linktr.ee](https://img.shields.io/badge/linktree-43E55E?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/scottlopez)   | [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/scottlopez) |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![mastodon](https://img.shields.io/badge/Mastodon-6364FF?style=for-the-badge&logo=Mastodon&logoColor=white)](https://noc.social/@sundevil311) | [![xda](https://img.shields.io/badge/xda%20developers-2DAAE9?style=for-the-badge&logo=xda-developers&logoColor=white)](https://xda.neteng.pro)    |
 
-&NonBreakingSpace; <!-- space for clarity -->
+&nbsp; <!-- space for clarity -->
+
+<sub>[Top](#top)</sub>
 
 ---
 
@@ -171,25 +199,20 @@ provide _Best Practices_ documentation for beginners, among other content.
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
-and Open Source Software Community<br /> Copyright &copy; 2024-2025
-**[Scott Lopez](https://bio.neteng.pro)**
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community<br />
+Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
-the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published
-by the Free Software Foundation,  
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation,  
 either version 3 of the License, or (at your option) any later version.
 
 </code>
 
 This material is free to distribute, remix, adapt, and build upon for any
-purpose, including commercial use.  
-As free software, it can be redistributed and modified under the
-[specified terms](https://raw.githubusercontent.com/NetEng-Pro/dev-neteng-pro/refs/heads/master/assets/LICENSE.md#gnu-gpl).
+purpose, including commercial use. As free software, it can be redistributed and modified under the
+[specified terms](LICENSE.md#gnu-gpl).
 
 NetEng-Pro is provided **_as is_** and **_as available_** without any
 warranties, express or implied. The Licensor makes no representations or
 guarantees regarding the Licensed Material and assumes no liability for its use.
 
-For details, see
-[Copyright and Licensing](https://raw.githubusercontent.com/NetEng-Pro/dev-neteng-pro/refs/heads/master/assets/LICENSE.md).
+For details, see [Copyright and Licensing](LICENSE.md).
