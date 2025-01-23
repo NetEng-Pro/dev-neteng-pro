@@ -10,20 +10,19 @@ import globals from "globals";
 export default [
   {
     files: ["**/*.js"],
+    ignores: ["!eslintconfig.mjs", "**/*.mjs", "**/.vscode", "**/node_modules"],
     languageOptions: {
       sourceType: "commonjs",
       parserOptions: {
         ecmaVersion: 2022,
       },
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.es6,
+        ...globals.mocha, // Add Mocha globals
+      },
     },
-    globals: {
-      ...globals.browser,
-      ...globals.node,
-      ...globals.es6,
-      ...globals.mocha, // Add Mocha globals
-    },
-    // Note: there should be no other properties in this object
-    ignores: ["!eslintconfig.mjs", "**/*.mjs", "**/.vscode", "**/node_modules"],
     extends: [
       "eslint:recommended", // Extend recommended ESLint rules
       "plugin:mocha/recommended", // Extend recommended Mocha plugin rules
