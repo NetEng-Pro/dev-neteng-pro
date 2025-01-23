@@ -8,7 +8,7 @@
     <!--
 
     Network Engineering Pro (NetEng-Pro), a Free/Libre and Open Source Community
-    Copyright © 2024 Scott Lopez
+    Copyright © 2024-2025 Scott Lopez
 
     ---
 
@@ -55,8 +55,9 @@
     </title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" herf="css/index.css" />
     <!-- Font Awesome solids and brands -->
     <script src="https://kit.fontawesome.com/f70f03cb45.js" crossorigin="anonymous"></script>
 
@@ -65,6 +66,10 @@
       content="Explore Free/Libre & Open Source Software, security, and digital privacy for Android & Linux at Network Engineering Pro. Join the community & contribute today!"
     />
     <meta name="author" content="Scott Lopez" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
 
     <link rel="canonical" href="https://neteng.pro" />
     <base href="https://neteng.pro" target="_self" />
@@ -73,7 +78,7 @@
     <meta property="og:title" content="Network Engineering Pro | Open Source Software Community" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="neteng.pro" />
-    <meta property="og:image" content="/img/banner-og-1200x630.png" />
+    <meta property="og:image" content="img/banner-og-1200x630.png" />
     <meta property="og:image:alt" content="Network Engineering Pro" />
     <meta
       property="og:description"
@@ -91,7 +96,7 @@
       name="twitter:description"
       content="Explore Free/Libre & Open Source Software, security, and digital privacy for Android & Linux at Network Engineering Pro. Join the community & contribute today!"
     />
-    <meta name="twitter:image" content="/img/banner-og-1200x630.png" />
+    <meta name="twitter:image" content="img/banner-og-1200x630.png" />
     <meta name="twitter:image:alt" content="Network Engineering Pro" />
     <!-- Meta Tags Generated via dnschecker.org -->
 
@@ -102,13 +107,28 @@
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#191919" />
 
+    <meta http-equiv="Referrer-Policy" content="no-referrer" />
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 
     <meta name="facebook-domain-verification" content="bx4ham0zkpvzztzu213bhpt76m9siq" />
   </head>
 
   <body>
-    <!-- Add your site or application content here -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#discuss">Discussions</a></li>
+          <li><a href="#Links">Links</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="index-h1"><em>Network Engineering Pro</em></h1>
+    <h2 class="index-h2">floss | android | linux | security | privacy</h2>
+
+    &nbsp;
+
     <p>Hello world! This is HTML5 Boilerplate.</p>
     <script src="js/app.js"></script>
   </body>

@@ -1,5 +1,6 @@
 // webpack.common.js
-/* SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
+/*
+SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Engineering Pro
 */
 
@@ -35,7 +36,18 @@ module.exports = {
       },
       {
         test: /\.css$/, // Apply this rule to .css files
-        use: ['style-loader', 'css-loader'], // Use style-loader and css-loader to handle CSS files
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [], // Remove postcss-normalize plugin
+              },
+            },
+          },
+        ],
       },
     ],
   },
