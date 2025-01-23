@@ -13,18 +13,13 @@ export default [
     languageOptions: {
       sourceType: "commonjs",
     },
-    env: {
-      browser: true,
-      es6: true,
-      node: true,
-      mocha: true, // Add Mocha environment
-    },
     parserOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 2022,
     },
     globals: {
       ...globals.browser,
       ...globals.node,
+      ...globals.es6,
       ...globals.mocha, // Add Mocha globals
     },
     // Note: there should be no other properties in this object
