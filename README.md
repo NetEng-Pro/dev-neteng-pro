@@ -202,8 +202,7 @@ provide _Best Practices_ documentation for beginners, among other content.
 **[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community<br />
 Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
-the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation,  
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation,  
 either version 3 of the License, or (at your option) any later version.
 
 </code>
