@@ -22,6 +22,15 @@ export default [
       ...globals.node,
       ...globals.mocha, // Add Mocha globals
     },
+    {
+      // Note: there should be no other properties in this object
+      ignores: [
+        "!eslintconfig.mjs",
+        "**/*.mjs",
+        "**/.vscode/**",
+        "**/node_modules"
+      ],
+    },
     extends: [
       "eslint:recommended", // Extend recommended ESLint rules
       "plugin:mocha/recommended", // Extend recommended Mocha plugin rules
