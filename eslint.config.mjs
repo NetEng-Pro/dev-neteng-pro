@@ -1,3 +1,8 @@
+/*
+SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
+This file is part of Network Engineering Pro
+*/
+
 import pluginJs from "@eslint/js";
 import globals from "globals";
 
@@ -22,15 +27,13 @@ export default [
       ...globals.node,
       ...globals.mocha, // Add Mocha globals
     },
-    {
-      // Note: there should be no other properties in this object
-      ignores: [
-        "!eslintconfig.mjs",
-        "**/*.mjs",
-        "**/.vscode/**",
-        "**/node_modules"
-      ],
-    },
+    // Note: there should be no other properties in this object
+    ignores: [
+      "!eslintconfig.mjs",
+      "**/*.mjs",
+      "**/.vscode",
+      "**/node_modules"
+    ],
     extends: [
       "eslint:recommended", // Extend recommended ESLint rules
       "plugin:mocha/recommended", // Extend recommended Mocha plugin rules

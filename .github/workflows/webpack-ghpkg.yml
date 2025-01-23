@@ -1,7 +1,10 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
+# This file is part of Network Engineering Pro
+#
+# This workflow will lint all JavaScript with ESLint, run tests using node 20.x and 22.x on both ubuntu-22.04 and ubuntu-24.04, and then publish a package to GitHub Packages when a release is created
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
-name: Node.js Webpack Package
+name: Build, Test, and Publish Webpack
 
 on:
   release:
@@ -31,6 +34,8 @@ jobs:
             ${{ matrix.node-version }}
       - name: Install dependencies
         run: npm ci
+      - name: Lint all JS using ESLint
+        run: npm run lint
       - name: Run tests using Mocha framework
         run: npm test
       - name: Build project
@@ -40,7 +45,7 @@ jobs:
 
   publish-gpr:
     needs: build
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
@@ -51,7 +56,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://npm.pkg.github.com/
       - name: Cache Node.js modules
         uses: actions/cache@v3
         with:
@@ -71,6 +76,6 @@ jobs:
         run: cp package.json dist/
       - name: Publish package
         working-directory: ./dist
-        run: npm publish --access public
+        run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
