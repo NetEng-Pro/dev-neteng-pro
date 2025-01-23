@@ -1,3 +1,9 @@
+// webpack.config.prod.js
+/*
+SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
+This file is part of Network Engineering Pro
+*/
+
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -11,9 +17,11 @@ module.exports = merge(common, {
   output: {
     filename: 'js/[name].[contenthash].js', // Use contenthash for better caching
     path: path.resolve(__dirname, 'dist'), // Output directory
+    chunkFilename: 'js/[name].[contenthash].js', // File name for dynamically loaded chunks
     chunkFormat: 'array-push', // Specify the chunk format
     clean: true, // Clean the output directory before emit
   },
+  target: 'web', // Ensure the target is set to 'web' for browser environments
   optimization: {
     minimize: true,
     minimizer: [
@@ -41,7 +49,23 @@ module.exports = merge(common, {
     ],
     splitChunks: {
       chunks: 'all', // Split chunks for better caching
+      minSize: 20000, // Minimum size for a chunk to be generated
+      maxSize: 70000, // Maximum size for a chunk before splitting
+      minChunks: 1, // Minimum number of chunks that must share a module before splitting
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10, // Lower priority for vendor chunks
+          reuseExistingChunk: true, // Reuse existing chunk if possible
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true, // Reuse existing chunk if possible
+        },
+      },
     },
+    runtimeChunk: 'single', // Create a single runtime bundle for all chunks
   },
   plugins: [
     new HtmlWebpackPlugin({
