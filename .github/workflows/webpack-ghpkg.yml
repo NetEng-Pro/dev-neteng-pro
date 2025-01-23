@@ -9,8 +9,6 @@
 name: Build and Test Webpack (ghpkg)
 
 on:
-  release:
-    types: [created]
   workflow_dispatch:
 
 jobs:
