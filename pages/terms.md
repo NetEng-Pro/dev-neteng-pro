@@ -48,8 +48,21 @@ Web: <https://bio.neteng.pro>
 ## About
 
 Welcome to Network Engineering Pro (NetEng-Pro), a Free/Libre and Open Source
-community. By accessing or using any of our 'partner platforms', you agree to
-comply with the following Terms and Conditions ("T&C").
+community. By accessing or using any of our partner platforms, you agree to
+these Terms and Conditions ("T&C"). _In this document, 'Network Engineering Pro'
+and 'NetEng-Pro' collectively refer to the community, its platforms, and all
+individual members._
+
+**These terms safeguard both the community and its members from potential legal
+issues arising from the use of our services, none of which are currently
+self-hosted.**
+
+> ⚠️ **TL;DR:** Network Engineering Pro, including both the community and its
+> individual members, provides no warranties and assumes no liability for any
+> damages. By using our platforms, you agree to indemnify and hold NetEng-Pro
+> and its members harmless from any claims.
+
+&nbsp;
 
 ### _Partner Platforms_
 
@@ -57,8 +70,6 @@ comply with the following Terms and Conditions ("T&C").
 - **Website** _(uses GitHub Pages)_
 - **Slack**
 - **Stack Overflow Teams**
-
-&nbsp;
 
 ---
 
@@ -70,7 +81,7 @@ comply with the following Terms and Conditions ("T&C").
 
 2. **Use at Your Own Risk:** Individuals who choose to use NetEng-Pro 'partner
    platforms' do so at their own risk. We cannot guarantee the security,
-   integrity, or reliability of the data stored on external infrastructure, over
+   integrity, or reliability of the data stored on external infrastructure over
    which we have no control.
 
 3. **Limitation of Liability:** In no event shall Network Engineering Pro or its
@@ -83,16 +94,18 @@ comply with the following Terms and Conditions ("T&C").
    indemnify and hold us harmless from any claims, damages, losses, liabilities,
    and expenses arising from your usage.
 
-**By accessing or using Network Engineering Pro's website and/or partner
-platforms, as defined in this document, you acknowledge and agree to these Terms
-and Conditions.**
+**By accessing or using Network Engineering Pro's website or any partner
+platform defined in this document, you acknowledge and agree to these Terms &
+Conditions.**
+
+&nbsp;
 
 > **If you do not agree with any part of the terms outlined above, please
-> refrain from using our services.**
+> refrain from using our services!**
 
-> ⚠️ Any access to or use of NetEng-Pro partner platforms, including but not
-> limited to GitHub, Slack, and/or Stack Overflow shall be considered an
-> implicit acceptance of the T&C outlined above.
+> > ⚠️ By accessing or using NetEng-Pro or its partner platforms—including, but
+> > not limited to, GitHub, Slack, and Stack Overflow—you implicitly accept the
+> > Terms & Conditions outlined above.
 
 &nbsp;
 
@@ -100,15 +113,15 @@ and Conditions.**
 
 ---
 
-<pre style="white-space: pre-wrap;">
+<pre style="display: block; white-space: pre-wrap;">
 Terms and Conditions last modified 1/23/2025. T&C are subject to change at any time, for any reason, without notice.
 </pre>
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
 **[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
-and Open Source Software Community<br /> Copyright &copy; 2024-2025
-**[Scott Lopez](https://bio.neteng.pro)**
+and Open Source Software Community  
+Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
 Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
 the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published

@@ -4,6 +4,7 @@ This file is part of Network Engineering Pro
 */
 
 import pluginJs from "@eslint/js";
+import eslintConfigPrettier from "eslint-config-prettier";
 import globals from "globals";
 
 /** @type {import('eslint').Linter.Config[]} */
@@ -26,6 +27,7 @@ export default [
     extends: [
       "eslint:recommended", // Extend recommended ESLint rules
       "plugin:mocha/recommended", // Extend recommended Mocha plugin rules
+      eslintConfigPrettier, // Add eslint-config-prettier last to disable conflicting rules
     ],
     plugins: ["mocha"], // Add Mocha plugin
     rules: {

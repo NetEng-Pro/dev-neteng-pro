@@ -27,12 +27,17 @@ module.exports = {
       {
         test: /\.js$/, // Apply this rule to .js files
         exclude: /node_modules/, // Exclude node_modules directory
-        use: {
-          loader: 'babel-loader', // Use Babel loader to transpile ES6+ code
-          options: {
-            presets: ['@babel/preset-env'], // Ensure you have @babel/preset-env installed
+        use: [
+          {
+            loader: 'babel-loader', // Use Babel loader to transpile ES6+ code
+            options: {
+              presets: ['@babel/preset-env'], // Ensure you have @babel/preset-env installed
+            },
           },
-        },
+          {
+            loader: path.resolve(__dirname, 'prettier-eslint-loader.js'), // Use custom prettier-eslint loader
+          },
+        ],
       },
       {
         test: /\.css$/, // Apply this rule to .css files

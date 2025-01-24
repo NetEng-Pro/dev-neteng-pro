@@ -64,14 +64,12 @@ CC-BY-4.0 OR GPL-3.0-or-later
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community<br />
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community <br />
 Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
 </code>
 
-NetEng-Pro is provided **_as is_** and **_as available_** without any
-warranties, express or implied. The Licensor makes no representations or
-guarantees regarding the Licensed Material and assumes no liability for its use.
+NetEng-Pro is provided **_as is_** and **_as available_** without any warranties, express or implied. The Licensor makes no representations or guarantees regarding the Licensed Material and assumes no liability for its use.
 
 > > _Unless otherwise noted, Network Engineering Pro (NetEng-Pro) in its'
 > > entirety is available exclusively under the licenses outlined herein._
@@ -155,8 +153,10 @@ this License—may be available as further defined within this document.
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-- SPDX Reference: <https://spdx.org/licenses/CC-BY-4.0.html>
-- Canonical URL: <https://creativecommons.org/licenses/by/4.0/>
+- SPDX Reference:  
+  <https://spdx.org/licenses/CC-BY-4.0.html>
+- Canonical URL:  
+  <https://creativecommons.org/licenses/by/4.0/>
 
 </code>
 
@@ -232,20 +232,15 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
 **[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
-and Open Source Software Community<br /> Copyright &copy; 2024-2025
-**[Scott Lopez](https://bio.neteng.pro)**
+and Open Source Software Community  
+Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
 Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
-the **[GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html)**, as published
-by the Free Software Foundation,  
+the **[GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html)**, as published by the Free Software Foundation,  
 either version 3 of the License, or (at your option) any later version.
 
 </code>
 
-This material is free to distribute, remix, adapt, and build upon for any
-purpose, including commercial use. As free software, it can be redistributed and
-modified under the [specified terms](#gnu-gpl).
+This material is free to distribute, remix, adapt, and build upon for any purpose, including commercial use. As free software, it can be redistributed and modified under the [specified terms](#gnu-gpl).
 
-NetEng-Pro is provided **_as is_** and **_as available_** without any
-warranties, express or implied. The Licensor makes no representations or
-guarantees regarding the Licensed Material and assumes no liability for its use.
+NetEng-Pro is provided **_as is_** and **_as available_** without any warranties, express or implied. The Licensor makes no representations or guarantees regarding the Licensed Material and assumes no liability for its use.

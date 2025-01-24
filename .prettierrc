@@ -1,0 +1,27 @@
+{
+  "documentSelectors": [
+    "**/*.{ts,js}",
+    "**/*.{html,htm}",
+    "**/*.{yaml,yml}",
+    "**/*.css",
+    "**/*.{md,markdown}",
+    "**/*.{json,jsonc}"
+  ],
+  "htmlWhitespaceSensitivity": "strict",
+  "quoteProps": "consistent",
+  "trailingComma": "all",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "proseWrap": "always",
+  "endOfLine": "lf",
+  "printWidth": 80,
+  "arrowParens": "always",
+  "semi": true,
+  "tabWidth": 2,
+  "jsxSingleQuote": true,
+  "singleQuote": true,
+  "singleAttributePerLine": false,
+  "requirePragma": false,
+  "insertPragma": false,
+  "useTabs": false
+}
