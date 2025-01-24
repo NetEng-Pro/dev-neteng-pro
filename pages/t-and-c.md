@@ -100,7 +100,9 @@ and Conditions.**
 
 ---
 
-    Terms and Conditions last modified 1/23/2025. T&C are subject to change at any time, for any reason, without notice.
+<pre style="white-space: pre-wrap;">
+Terms and Conditions last modified 1/23/2025. T&C are subject to change at any time, for any reason, without notice.
+</pre>
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
