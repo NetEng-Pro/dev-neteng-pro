@@ -27,7 +27,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh run list --workflow "CodeQL Analysis" --json conclusion --jq '.[0].conclusion' > codeql_status.txt
+          gh run list --workflow "CodeQL" --json conclusion --jq '.[0].conclusion' > codeql_status.txt
           CODEQL_STATUS=$(cat codeql_status.txt)
           if [[ "$CODEQL_STATUS" != "success" ]]; then
             echo "CodeQL Analysis did not succeed. Exiting..."
@@ -60,8 +60,8 @@ jobs:
       # Linting not working properly, future debug
       #- name: Lint all JS using ESLint
       #run: npm run lint
-      - name: Check and format all files with Prettier if needed
-        run: npx prettier --write .
+      - name: Check all files with Prettier
+        run: npx prettier --check .
       - name: Run tests using Mocha framework
         run: npm test
       - name: Build project
