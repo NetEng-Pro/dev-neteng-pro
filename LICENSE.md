@@ -44,7 +44,7 @@ Web: <https://bio.neteng.pro>
 -->
 
 <a href="https://spdx.dev/learn/handling-license-info/">SPDX-License-Identifier:</a>
-(CC-BY-4.0 OR GPL-3.0-or-later)
+CC-BY-4.0 OR GPL-3.0-or-later
 
 # <a id="top">Copyright and Licensing</a>
 
