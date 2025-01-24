@@ -87,7 +87,7 @@ module.exports = merge(common, {
       patterns: [
         { from: 'img', to: 'img' },
         { from: 'css', to: 'css' },
-        { from: 'assets', to: 'assets' },
+        { from: 'pages', to: 'pages' },
         { from: 'js/vendor', to: 'js/vendor' },
         { from: 'favicon.svg', to: 'favicon.svg' },
         { from: 'favicon.ico', to: 'favicon.ico' },

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Engineering Pro
-#
+
 # This workflow will lint all JavaScript with ESLint, run tests using node 20.x
 # and 22.x on both ubuntu-22.04 and ubuntu-24.04, and then publish a package to
 # the npmjs registry when a release is created
@@ -48,7 +48,7 @@ jobs:
 
   publish-npm:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     permissions:
       contents: read
       packages: write
