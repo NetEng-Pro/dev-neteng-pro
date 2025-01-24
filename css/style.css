@@ -96,9 +96,9 @@ textarea {
 body {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
-  /* margin: 4px; */
   background-color: #191919;
   color: #fafafa;
+  margin: 10px 10px;
 }
 
 /* parent link element */
@@ -127,6 +127,22 @@ a:hover {
 a:active {
   color: #ffc627;
   text-decoration: underline;
+}
+
+/* code block for legal text */
+.block {
+  height: 50vh;
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 0;
+  resize: none;
+  outline: none;
+}
+
+.prewrap {
+  display: block;
+  white-space: pre-wrap;
 }
 
 /* ==========================================================================

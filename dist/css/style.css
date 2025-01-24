@@ -43,6 +43,7 @@ body{
   color:#fafafa;
   font-family:Arial,Helvetica,sans-serif;
   font-size:16px;
+  margin:10px;
 }
 a{
   align-content:center;
@@ -61,6 +62,20 @@ a:hover{
 a:active{
   color:#ffc627;
   text-decoration:underline;
+}
+.block{
+  background:none;
+  border:none;
+  border-radius:0;
+  height:50vh;
+  outline:none;
+  resize:none;
+  width:100%;
+}
+
+.prewrap{
+  display:block;
+  white-space:pre-wrap;
 }
 
 .hidden,[hidden]{

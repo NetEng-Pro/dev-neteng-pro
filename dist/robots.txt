@@ -10,4 +10,5 @@ Disallow: *.jpg$
 Disallow: *.json$
 Disallow: /css
 Disallow: /img
-Disallow: /js
+Disallow: /json 
+Disallow: /assets

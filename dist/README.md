@@ -2,7 +2,6 @@
 <!-- This file is part of Network Engineering Pro -->
 
 <!--
-
 Network Engineering Pro (NetEng-Pro), a Free/Libre and Open Source Community
 Copyright © 2024-2025 Scott Lopez
 
@@ -42,8 +41,10 @@ See the GNU General Public License for more details.
 Author: Scott Lopez
 Email: <contact@neteng.pro>
 Web: <https://bio.neteng.pro>
-
 -->
+
+<a rel="noopener noreferrer" href="<https://spdx.dev/learn/handling-license-info/">SPDX-License-Identifier>:</a>
+CC-BY-4.0 OR GPL-3.0-or-later
 
 # <a id="top">Network Engineering Pro</a>
 
@@ -209,10 +210,10 @@ either version 3 of the License, or (at your option) any later version.
 
 This material is free to distribute, remix, adapt, and build upon for any
 purpose, including commercial use. As free software, it can be redistributed and modified under the
-[specified terms](LICENSE.md#gnu-gpl).
+[specified terms](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md#gnu-gpl).
 
 NetEng-Pro is provided **_as is_** and **_as available_** without any
 warranties, express or implied. The Licensor makes no representations or
 guarantees regarding the Licensed Material and assumes no liability for its use.
 
-For details, see [Copyright and Licensing](LICENSE.md).
+For details, see [Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md).
