@@ -3,17 +3,17 @@ SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Engineering Pro
 */
 
-import pluginJs from "@eslint/js";
-import eslintConfigPrettier from "eslint-config-prettier";
-import globals from "globals";
+import pluginJs from '@eslint/js';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import globals from 'globals';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   {
-    files: ["**/*.js"],
-    ignores: ["!eslintconfig.mjs", "**/*.mjs", "**/.vscode", "**/node_modules"],
+    files: ['**/*.js'],
+    ignores: ['!eslintconfig.mjs', '**/*.mjs', '**/.vscode', '**/node_modules'],
     languageOptions: {
-      sourceType: "commonjs",
+      sourceType: 'commonjs',
       parserOptions: {
         ecmaVersion: 2022,
       },
@@ -25,19 +25,19 @@ export default [
       },
     },
     extends: [
-      "eslint:recommended", // Extend recommended ESLint rules
-      "plugin:mocha/recommended", // Extend recommended Mocha plugin rules
+      'eslint:recommended', // Extend recommended ESLint rules
+      'plugin:mocha/recommended', // Extend recommended Mocha plugin rules
       eslintConfigPrettier, // Add eslint-config-prettier last to disable conflicting rules
     ],
-    plugins: ["mocha"], // Add Mocha plugin
+    plugins: ['mocha'], // Add Mocha plugin
     rules: {
       // Add custom rules or overrides here
-      "mocha/no-exclusive-tests": "error", // Prevents accidental `describe.only` or `it.only`
-      "mocha/no-skipped-tests": "warn", // Warns against skipped tests (`it.skip`)
-      "mocha/no-hooks-for-single-case": "warn", // Avoids unnecessary `beforeEach` hooks in single tests
-      "indent": ["error", 2],
-      "quotes": ["error", "single"],
-      "semi": ["error", "always"],
+      'mocha/no-exclusive-tests': 'error', // Prevents accidental `describe.only` or `it.only`
+      'mocha/no-skipped-tests': 'warn', // Warns against skipped tests (`it.skip`)
+      'mocha/no-hooks-for-single-case': 'warn', // Avoids unnecessary `beforeEach` hooks in single tests
+      'indent': ['error', 2],
+      'quotes': ['error', 'single'],
+      'semi': ['error', 'always'],
     },
   },
   pluginJs.configs.recommended,
