@@ -4,24 +4,24 @@ SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Engineering Pro
 */
 
-const { merge } = require("webpack-merge");
-const common = require("./webpack.common.js");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const path = require("path");
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const path = require('path');
 
 module.exports = merge(common, {
-  mode: "production",
+  mode: 'production',
   output: {
-    filename: "js/[name].[contenthash].js", // Use contenthash for better caching
-    path: path.resolve(__dirname, "dist"), // Output directory
-    chunkFilename: "js/[name].[contenthash].js", // File name for dynamically loaded chunks
-    chunkFormat: "array-push", // Specify the chunk format
+    filename: 'js/[name].[contenthash].js', // Use contenthash for better caching
+    path: path.resolve(__dirname, 'dist'), // Output directory
+    chunkFilename: 'js/[name].[contenthash].js', // File name for dynamically loaded chunks
+    chunkFormat: 'array-push', // Specify the chunk format
     clean: true, // Clean the output directory before emit
   },
-  target: "web", // Ensure the target is set to 'web' for browser environments
+  target: 'web', // Ensure the target is set to 'web' for browser environments
   optimization: {
     minimize: true,
     minimizer: [
@@ -38,7 +38,7 @@ module.exports = merge(common, {
       new CssMinimizerPlugin({
         minimizerOptions: {
           preset: [
-            "default",
+            'default',
             {
               discardComments: { removeAll: true }, // Remove comments, but preserve whitespace
               normalizeWhitespace: false, // Preserve whitespace in CSS files
@@ -48,7 +48,7 @@ module.exports = merge(common, {
       }),
     ],
     splitChunks: {
-      chunks: "all", // Split chunks for better caching
+      chunks: 'all', // Split chunks for better caching
       minSize: 20000, // Minimum size for a chunk to be generated
       maxSize: 70000, // Maximum size for a chunk before splitting
       minChunks: 1, // Minimum number of chunks that must share a module before splitting
@@ -65,11 +65,11 @@ module.exports = merge(common, {
         },
       },
     },
-    runtimeChunk: "single", // Create a single runtime bundle for all chunks
+    runtimeChunk: 'single', // Create a single runtime bundle for all chunks
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html", // Template for the HTML file
+      template: './index.html', // Template for the HTML file
       minify: {
         removeComments: true, // Remove comments
         removeRedundantAttributes: true, // Remove redundant attributes
@@ -85,26 +85,26 @@ module.exports = merge(common, {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "img", to: "img" },
-        { from: "css", to: "css" },
-        { from: "assets", to: "assets" },
-        { from: "js/vendor", to: "js/vendor" },
-        { from: "favicon.svg", to: "favicon.svg" },
-        { from: "favicon.ico", to: "favicon.ico" },
-        { from: "robots.txt", to: "robots.txt" },
-        { from: "favicon-apple.png", to: "favicon-apple.png" },
-        { from: "favicon-512.png", to: "favicon-512.png" },
-        { from: "favicon-192.png", to: "favicon-192.png" },
-        { from: "favicon-light.ico", to: "favicon-light.ico" },
-        { from: "favicon-light.svg", to: "favicon-light.svg" },
-        { from: "legal.html", to: "legal.html" },
-        { from: "LICENSE.md", to: "LICENSE.md" },
-        { from: "README.md", to: "README.md" },
-        { from: "404.html", to: "404.html" },
-        { from: "bimi-svg-tiny-ps.xml", to: "bimi-svg-tiny-ps.xml" },
-        { from: "site.webmanifest", to: "site.webmanifest" },
-        { from: "sitemap.xml", to: "sitemap.xml" },
-        { from: "CNAME", to: "CNAME" },
+        { from: 'img', to: 'img' },
+        { from: 'css', to: 'css' },
+        { from: 'assets', to: 'assets' },
+        { from: 'js/vendor', to: 'js/vendor' },
+        { from: 'favicon.svg', to: 'favicon.svg' },
+        { from: 'favicon.ico', to: 'favicon.ico' },
+        { from: 'robots.txt', to: 'robots.txt' },
+        { from: 'favicon-apple.png', to: 'favicon-apple.png' },
+        { from: 'favicon-512.png', to: 'favicon-512.png' },
+        { from: 'favicon-192.png', to: 'favicon-192.png' },
+        { from: 'favicon-light.ico', to: 'favicon-light.ico' },
+        { from: 'favicon-light.svg', to: 'favicon-light.svg' },
+        { from: 'legal.html', to: 'legal.html' },
+        { from: 'LICENSE.md', to: 'LICENSE.md' },
+        { from: 'README.md', to: 'README.md' },
+        { from: '404.html', to: '404.html' },
+        { from: 'bimi-svg-tiny-ps.xml', to: 'bimi-svg-tiny-ps.xml' },
+        { from: 'site.webmanifest', to: 'site.webmanifest' },
+        { from: 'sitemap.xml', to: 'sitemap.xml' },
+        { from: 'CNAME', to: '.' }, // Corrected path to copy CNAME to the root directory
       ],
     }),
   ],

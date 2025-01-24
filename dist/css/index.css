@@ -1,10 +1,64 @@
-index-h1,index-h2{
+.center-nav{
+  padding:20px;
+  text-align:center;
+}
+
+.index1{
+  font-style:italic;
+}
+
+.index1,.index2{
+  text-align:center;
+}
+
+.index2{
+  font-variant:small-caps;
+  text-transform:lowercase;
+}
+
+.center-text{
+  text-align:center;
+}
+
+.gh{
+  border-collapse:collapse;
+  border-spacing:0;
   margin-left:auto;
   margin-right:auto;
 }
 
-index-h2{
+.gh td,.gh th{
+  border-style:none;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+}
+
+.gh th{
+  font-weight:400;
+}
+
+.gh .gh-tcell{
+  text-align:center;
+  vertical-align:middle;
+}
+
+.community{
+  font-size:22px;
+}
+
+.voice1{
   font-size:20px;
-  font-variant:small-caps;
-  text-transform:lowercase;
+  font-weight:700;
+}
+
+.voice2{
+  font-size:18px;
+  font-style:italic;
+  text-align:center;
+}
+
+.hr-styled{
+  margin:auto;
+  width:75%;
 }
