@@ -1,7 +1,10 @@
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Engineering Pro
 
-# When a release is created, this workflow will automatically format files with # Prettier (if needed), execute tests using Node.js 20.x and 22.x on both Ubuntu # 22.04 and 24.04, and finally, publish the package to the npmjs registry.
+# When a release is created, this workflow will check files for formatting
+# issues using Prettier, execute tests using Node.js 20.x and 22.x on both
+# Ubuntu 22.04 and 24.04, and finally, publish the package to the npmjs
+# registry.
 #
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
@@ -13,7 +16,22 @@ on:
   workflow_dispatch:
 
 jobs:
+  check-codeql:
+    name: Check CodeQL Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check CodeQL Workflow
+        id: codeql-check
+        run: |
+          gh run list --workflow "CodeQL Analysis" --json conclusion --jq '.[0].conclusion' > codeql_status.txt
+          CODEQL_STATUS=$(cat codeql_status.txt)
+          if [[ "$CODEQL_STATUS" != "success" ]]; then
+            echo "CodeQL Analysis did not succeed. Exiting..."
+            exit 1
+          fi
+
   build:
+    needs: check-codeql
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -38,7 +56,7 @@ jobs:
       # Linting not working properly, future debug
       #- name: Lint all JS using ESLint
       #run: npm run lint
-      - name: Check all files with Prettier and format if needed
+      - name: Check files for formatting issues using Prettier
         run: npx prettier --check .
       - name: Run tests using Mocha framework
         run: npm test
@@ -49,7 +67,7 @@ jobs:
 
   publish-npm:
     needs: build
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
