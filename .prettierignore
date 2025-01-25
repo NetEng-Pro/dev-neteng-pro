@@ -1,6 +1,5 @@
 # Ignore artifacts:
 license/*
 dist/*
-eslint.config.mjs
 build
 coverage

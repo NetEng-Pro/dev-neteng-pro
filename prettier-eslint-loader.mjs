@@ -9,7 +9,7 @@
 import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import { ESLint } from 'eslint';
-import { readFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 import path from 'path';
 import prettier from 'prettier';
 import { fileURLToPath } from 'url';
@@ -40,14 +40,15 @@ const filteredEslintConfigFlat = eslintConfigFlat.filter(
 // Convert Flat Config to Legacy Config
 const eslintConfigLegacy = compat.config(...filteredEslintConfigFlat);
 
+// Commented out logging for debugging
+// console.log('ESLint Configuration:', JSON.stringify(eslintConfigLegacy, null, 2));
+
 export default async function (source) {
+  const filePath = this.resourcePath;
   const options = {
     text: source,
     eslintConfig: {
-      baseConfig: {
-        ...eslintConfigLegacy,
-      },
-      ignorePatterns,
+      baseConfig: eslintConfigLegacy,
     },
     prettierOptions: {
       ...prettierOptions,
@@ -73,27 +74,35 @@ export default async function (source) {
   }
 
   // Debugging: Log the type and value of prettierFormatted
-  console.log(`Type of prettierFormatted: ${typeof prettierFormatted}`);
-  console.log('Prettier formatted content:', prettierFormatted);
+  // console.log(`Type of prettierFormatted: ${typeof prettierFormatted}`);
+  // console.log('Prettier formatted content:', prettierFormatted);
 
   // Ensure prettierFormatted is a string
   if (typeof prettierFormatted !== 'string') {
     throw new Error("'prettierFormatted' must be a string");
   }
 
+  // Check if the content has changed before writing back to the file
+  const currentContent = readFileSync(filePath, 'utf8');
+  if (currentContent !== prettierFormatted) {
+    writeFileSync(filePath, prettierFormatted);
+  }
+
   // ESLint analyze
   const eslint = new ESLint({
     baseConfig: options.eslintConfig.baseConfig,
+    overrideConfig: {},
     warnIgnored: false,
   });
+
   const results = await eslint.lintText(prettierFormatted, {
-    filePath: __filename,
+    filePath,
   });
 
   // Log ESLint messages
   results.forEach((result) => {
     result.messages.forEach((message) => {
-      console.log(message);
+      // console.log(message);
     });
   });
 

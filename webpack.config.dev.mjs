@@ -16,12 +16,12 @@ export default merge(common, {
     hot: true, // Enable hot module replacement
     open: true, // Automatically open the browser
     static: {
-      directory: path.join(path.dirname('./'), './'), // Serve static files from the root directory
+      directory: path.resolve(process.cwd(), './'), // Serve static files from the root directory
     },
   },
   output: {
     chunkFormat: 'array-push', // Specify the chunk format
-    path: path.resolve(path.dirname('./'), 'dist'), // Output directory
+    path: path.resolve(process.cwd(), 'dist'), // Output directory for compiled assets
     filename: 'js/[name].bundle.js', // Output file name for better caching in development
     chunkFilename: 'js/[name].chunk.js', // File name for dynamically loaded chunks
     clean: true, // Clean the output directory before emit

@@ -13,7 +13,7 @@ export default {
   },
   // Output configuration
   output: {
-    path: path.resolve(path.dirname('./'), 'dist'), // Output directory
+    path: path.resolve(process.cwd(), 'dist'), // Output directory
     filename: 'js/[name].[contenthash].js', // Output file name with contenthash for better caching
     chunkFilename: 'js/[name].[contenthash].js', // File name for dynamically loaded chunks
     chunkFormat: 'array-push', // Explicitly set the chunk format
@@ -35,10 +35,7 @@ export default {
             },
           },
           {
-            loader: path.resolve(
-              path.dirname('./'),
-              'prettier-eslint-loader.mjs',
-            ), // Use custom prettier-eslint loader
+            loader: path.resolve(process.cwd(), 'prettier-eslint-loader.mjs'), // Use custom prettier-eslint loader
           },
         ],
       },

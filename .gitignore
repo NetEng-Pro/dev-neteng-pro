@@ -8,9 +8,12 @@
 ### Custom Ignores ###
 python-venv/
 img/.orig/
+!dist/.gitkeep
+dist/*
 server.mjs
 crypto.mjs
 tests.mjs
+
 
 ### Dreamweaver ###
 # DW Dreamweaver added files

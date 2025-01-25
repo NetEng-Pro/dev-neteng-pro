@@ -16,7 +16,7 @@ export default merge(common, {
   mode: 'production',
   output: {
     filename: 'js/[name].[contenthash].js', // Use contenthash for better caching
-    path: path.resolve(path.dirname('./'), 'dist'), // Output directory
+    path: path.resolve(process.cwd(), 'dist'), // Output directory for production
     chunkFilename: 'js/[name].[contenthash].js', // File name for dynamically loaded chunks
     chunkFormat: 'array-push', // Specify the chunk format
     clean: true, // Clean the output directory before emit
