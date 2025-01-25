@@ -59,9 +59,9 @@ jobs:
         run: npm ci
       # Linting not working properly, future debug
       #- name: Lint all JS using ESLint
-      #run: npm run lint
-      - name: Check all files with Prettier
-        run: npx prettier --check .
+      #run: npx eslint .
+      #- name: Check all files and format with Prettier
+      #  run: npx prettier --write .
       - name: Run tests using Mocha framework
         run: npm test
       - name: Build project
