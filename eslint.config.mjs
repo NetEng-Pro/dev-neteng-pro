@@ -25,7 +25,7 @@ export default [
     'prettier',
   ),
   {
-    ignores: ['**/.prettierrc', '**/.vscode', '**/node_modules', '**/dist/js'],
+    ignores: ['**/.prettierrc', '**/.vscode', '**/node_modules'],
     plugins: {
       mocha,
     },
@@ -53,7 +53,7 @@ export default [
         beforeEach: 'readonly',
         afterEach: 'readonly',
       },
-      ecmaVersion: 'latest', // Use the latest ECMAScript version
+      ecmaVersion: 2022,
       sourceType: 'module',  // Set the source type to 'module'
     },
     rules: {
