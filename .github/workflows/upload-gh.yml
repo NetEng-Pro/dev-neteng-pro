@@ -7,7 +7,7 @@ name: Deploy static content to Pages
 
 on:
   workflow_run:
-    workflows: ['Build and Test Webpack (ghpkg)']
+    workflows: ['Build/Test Webpack, Publish to GitHub Packages']
     types:
       - completed
   workflow_dispatch:
