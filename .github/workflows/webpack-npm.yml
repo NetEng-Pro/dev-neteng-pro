@@ -1,12 +1,6 @@
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Engineering Pro
 
-# When a release is created, this workflow will automatically format files with
-# Prettier (if needed), execute tests using Node.js 20.x and 22.x on both Ubuntu
-# 22.04 and 24.04, and finally, publish to npm.
-#
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
 name: Build/Test Webpack, Publish to npm
 
 on:
@@ -17,12 +11,14 @@ on:
 jobs:
   check-codeql:
     name: Check CodeQL Analysis
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Set up GitHub CLI
         run: sudo apt-get install gh
+      - name: Authenticate GitHub CLI
+        run: gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
       - name: Check CodeQL Workflow
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -52,14 +48,15 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ matrix.node-version }}
+          key:
+            ${{ runner.os }}-node-${{ matrix.node-version }}-build-${{
+            hashFiles('package-lock.json') }}
           restore-keys: |
-            ${{ matrix.node-version }}
+            ${{ runner.os }}-node-${{ matrix.node-version }}-build-
+            ${{ runner.os }}-node-${{ matrix.node-version }}-
+            ${{ runner.os }}-node-
       - name: Install dependencies
         run: npm ci
-      # Linting appears to already be occurring
-      #- name: Lint all JS using ESLint
-      #  run: npm run lint
       - name: Run tests using Mocha framework
         run: npm test
         continue-on-error: true
@@ -70,7 +67,7 @@ jobs:
 
   publish-npm:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     permissions:
       contents: read
       packages: write
@@ -86,9 +83,13 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: 20.x
+          key:
+            ${{ runner.os }}-node-20.x-publish-${{
+            hashFiles('package-lock.json') }}
           restore-keys: |
-            20.x
+            ${{ runner.os }}-node-20.x-publish-
+            ${{ runner.os }}-node-20.x-
+            ${{ runner.os }}-node-
       - name: Install dependencies
         run: npm ci
       - name: Set up Git user
@@ -97,6 +98,11 @@ jobs:
           git config --global user.name "SunDevil311"
       - name: Increment version
         run: npm version patch
+      - name: Push version commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin HEAD:main
       - name: Copy package.json to dist directory
         run: cp package.json dist/
       - name: Publish package
