@@ -57,11 +57,9 @@ jobs:
             ${{ matrix.node-version }}
       - name: Install dependencies
         run: npm ci
-      # Linting not working properly, future debug
+      # Linting appears to already be occurring
       #- name: Lint all JS using ESLint
-      #run: npx eslint .
-      #- name: Check all files and format with Prettier
-      #  run: npx prettier --write .
+      #  run: npm run lint
       - name: Run tests using Mocha framework
         run: npm test
       - name: Build project

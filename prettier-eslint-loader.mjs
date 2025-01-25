@@ -28,17 +28,8 @@ const compat = new FlatCompat({
   allConfig: js.configs.all,
 });
 
-// Separate ignore patterns from the flat config
-const ignorePatterns =
-  eslintConfigFlat.find((config) => config.ignores)?.ignores || [];
-
-// Remove ignores from the flat config
-const filteredEslintConfigFlat = eslintConfigFlat.filter(
-  (config) => !config.ignores,
-);
-
 // Convert Flat Config to Legacy Config
-const eslintConfigLegacy = compat.config(...filteredEslintConfigFlat);
+const eslintConfigLegacy = compat.config(...eslintConfigFlat);
 
 // Commented out logging for debugging
 // console.log('ESLint Configuration:', JSON.stringify(eslintConfigLegacy, null, 2));
@@ -79,7 +70,7 @@ export default async function (source) {
 
   // Ensure prettierFormatted is a string
   if (typeof prettierFormatted !== 'string') {
-    throw new Error("'prettierFormatted' must be a string");
+    throw new Error('"prettierFormatted" must be a string');
   }
 
   // Check if the content has changed before writing back to the file
@@ -101,8 +92,8 @@ export default async function (source) {
 
   // Log ESLint messages
   results.forEach((result) => {
-    result.messages.forEach((message) => {
-      // console.log(message);
+    result.messages.forEach((msg) => {
+      console.log(msg); // Uncommented this line to use the msg variable
     });
   });
 

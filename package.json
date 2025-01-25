@@ -1,6 +1,6 @@
 {
   "name": "@neteng-pro/nwpro-web",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "keywords": [
@@ -20,18 +20,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NetEng-Pro/dev-neteng-pro.git"
+    "url": "https://github.com/NetEng-Pro/dev-neteng-pro.git"
   },
   "license": "CC-BY-4.0 OR GPL-3.0-or-later",
-  "author": "Scott Lopez",
+  "author": {
+    "name": "Scott Lopez",
+    "email": "github@sl.neteng.cc",
+    "url": "https://bio.neteng.pro"
+  },
   "type": "module",
   "main": "index.html",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha 'test/**/*.js'",
-    "lint": "eslint '**/*.js'",
+    "test": "mocha \"test/**/*.js\" \"test/**/*.mjs\"",
+    "lint": "eslint --ext .js,.mjs .",
     "start": "webpack serve --open --config webpack.config.dev.mjs",
     "build": "webpack --config webpack.config.prod.mjs"
   },
