@@ -54,7 +54,8 @@ export default async function (source) {
       parser: 'babel', // Specify the parser
       ignorePath: path.resolve(__dirname, '.prettierignore'),
       plugins: [
-        await prettier.resolveConfig(__filename, { editorconfig: true }),
+        (await prettier.resolveConfig(__filename, { editorconfig: true })) ||
+          {},
       ],
     },
     fallbackPrettierOptions: {
