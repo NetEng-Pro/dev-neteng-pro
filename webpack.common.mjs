@@ -1,19 +1,19 @@
-// webpack.common.js
+// webpack.common.mjs
 /*
 SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Engineering Pro
 */
 
-const path = require('path');
+import path from 'path';
 
-module.exports = {
+export default {
   // Entry point for the application
   entry: {
     app: './js/app.js', // Main JavaScript file
   },
   // Output configuration
   output: {
-    path: path.resolve(__dirname, 'dist'), // Output directory
+    path: path.resolve(path.dirname('./'), 'dist'), // Output directory
     filename: 'js/[name].[contenthash].js', // Output file name with contenthash for better caching
     chunkFilename: 'js/[name].[contenthash].js', // File name for dynamically loaded chunks
     chunkFormat: 'array-push', // Explicitly set the chunk format
@@ -35,7 +35,10 @@ module.exports = {
             },
           },
           {
-            loader: path.resolve(__dirname, 'prettier-eslint-loader.js'), // Use custom prettier-eslint loader
+            loader: path.resolve(
+              path.dirname('./'),
+              'prettier-eslint-loader.mjs',
+            ), // Use custom prettier-eslint loader
           },
         ],
       },

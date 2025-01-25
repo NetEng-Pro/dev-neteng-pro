@@ -3,42 +3,60 @@ SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Engineering Pro
 */
 
-import pluginJs from '@eslint/js';
-import eslintConfigPrettier from 'eslint-config-prettier';
-import globals from 'globals';
+import { FlatCompat } from "@eslint/eslintrc";
+import js from "@eslint/js";
+import mocha from "eslint-plugin-mocha";
+import globals from "globals";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [
-  {
-    files: ['**/*.js'],
-    ignores: ['!eslintconfig.mjs', '**/*.mjs', '**/.vscode', '**/node_modules'],
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const compat = new FlatCompat({
+    baseDirectory: __dirname,
+    recommendedConfig: js.configs.recommended,
+    allConfig: js.configs.all
+});
+
+export default [{
+    ignores: ["**/eslintconfig.mjs", "**/*.mjs", "**/.vscode", "**/node_modules"],
+}, ...compat.extends("eslint:recommended", "plugin:mocha/recommended", "prettier"), {
+    plugins: {
+        mocha,
+    },
     languageOptions: {
-      sourceType: 'commonjs',
-      parserOptions: {
+        globals: {
+            ...globals.browser,
+            ...globals.node,
+            ...globals.mocha,
+            window: "readonly",
+            document: "readonly",
+            navigator: "readonly",
+            console: "readonly",
+            module: "readonly",
+            process: "readonly",
+            require: "readonly",
+            exports: "readonly",
+            global: "readonly",
+            Buffer: "readonly",
+            __dirname: "readonly",
+            __filename: "readonly",
+            describe: "readonly",
+            it: "readonly",
+            before: "readonly",
+            after: "readonly",
+            beforeEach: "readonly",
+            afterEach: "readonly",
+        },
         ecmaVersion: 2022,
-      },
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-        ...globals.es6,
-        ...globals.mocha, // Add Mocha globals
-      },
+        sourceType: "commonjs",
     },
-    extends: [
-      'eslint:recommended', // Extend recommended ESLint rules
-      'plugin:mocha/recommended', // Extend recommended Mocha plugin rules
-      eslintConfigPrettier, // Add eslint-config-prettier last to disable conflicting rules
-    ],
-    plugins: ['mocha'], // Add Mocha plugin
     rules: {
-      // Add custom rules or overrides here
-      'mocha/no-exclusive-tests': 'error', // Prevents accidental `describe.only` or `it.only`
-      'mocha/no-skipped-tests': 'warn', // Warns against skipped tests (`it.skip`)
-      'mocha/no-hooks-for-single-case': 'warn', // Avoids unnecessary `beforeEach` hooks in single tests
-      'indent': ['error', 2],
-      'quotes': ['error', 'single'],
-      'semi': ['error', 'always'],
+        "mocha/no-exclusive-tests": "error",
+        "mocha/no-skipped-tests": "warn",
+        "mocha/no-hooks-for-single-case": "warn",
+        indent: ["error", 2],
+        quotes: ["error", "single"],
+        semi: ["error", "always"],
     },
-  },
-  pluginJs.configs.recommended,
-];
+}];

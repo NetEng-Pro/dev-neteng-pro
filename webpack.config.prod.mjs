@@ -1,22 +1,22 @@
-// webpack.config.prod.js
+// webpack.config.prod.mjs
 /*
 SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Engineering Pro
 */
 
-const { merge } = require('webpack-merge');
-const common = require('./webpack.common.js');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const path = require('path');
+import CopyPlugin from 'copy-webpack-plugin';
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import path from 'path';
+import TerserPlugin from 'terser-webpack-plugin';
+import { merge } from 'webpack-merge';
+import common from './webpack.common.mjs';
 
-module.exports = merge(common, {
+export default merge(common, {
   mode: 'production',
   output: {
     filename: 'js/[name].[contenthash].js', // Use contenthash for better caching
-    path: path.resolve(__dirname, 'dist'), // Output directory
+    path: path.resolve(path.dirname('./'), 'dist'), // Output directory
     chunkFilename: 'js/[name].[contenthash].js', // File name for dynamically loaded chunks
     chunkFormat: 'array-push', // Specify the chunk format
     clean: true, // Clean the output directory before emit

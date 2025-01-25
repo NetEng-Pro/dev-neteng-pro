@@ -7,7 +7,7 @@ name: Deploy static content to Pages
 
 on:
   workflow_run:
-    workflows: ['Build/Test Webpack, Publish to npmjs']
+    workflows: ['Build/Test Webpack, Publish to npm']
     types:
       - completed
   workflow_dispatch:

@@ -1,6 +1,6 @@
 {
   "name": "@neteng-pro/nwpro-web",
-  "version": "0.1.8",
+  "version": "0.1.10",
   "private": false,
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "keywords": [
@@ -24,7 +24,7 @@
   },
   "license": "CC-BY-4.0 OR GPL-3.0-or-later",
   "author": "Scott Lopez",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.html",
   "directories": {
     "test": "test"
@@ -32,22 +32,23 @@
   "scripts": {
     "test": "mocha 'test/**/*.js'",
     "lint": "eslint '**/*.js'",
-    "start": "webpack serve --open --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "start": "webpack serve --open --config webpack.config.dev.mjs",
+    "build": "webpack --config webpack.config.prod.mjs"
   },
   "dependencies": {
     "browserslist": "^4.24.4",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
+    "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.18.0",
     "babel-loader": "^9.2.1",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
-    "eslint": "^9.18.0",
+    "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-mocha": "^10.5.0",
     "globals": "^15.14.0",
@@ -56,6 +57,7 @@
     "postcss": "^8.5.1",
     "postcss-loader": "^8.1.1",
     "prettier": "3.4.2",
+    "prettier-eslint": "^16.3.0",
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.11",
     "webpack": "^5.97.1",
