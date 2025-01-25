@@ -19,7 +19,7 @@ const compat = new FlatCompat({
 });
 
 export default [{
-    ignores: ["**/eslintconfig.mjs", "**/*.mjs", "**/.vscode", "**/node_modules", "**/dist/js"],
+    ignores: ["**/eslintconfig.mjs", "**/.prettierrc", "**/*.mjs", "**/.vscode", "**/node_modules", "**/dist"],
 }, ...compat.extends("eslint:recommended", "plugin:mocha/recommended", "prettier"), {
     plugins: {
         mocha,
