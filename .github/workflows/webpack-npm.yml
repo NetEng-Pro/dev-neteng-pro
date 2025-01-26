@@ -112,7 +112,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git push origin HEAD:main
+          git push origin HEAD:master
       - name: Debug - List files in current directory before ensuring dist
         run: ls -la
       - name: Ensure dist directory exists
