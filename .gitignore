@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
-# This file is part of Network Engineering Pro.
+# This file is part of Network Engineering Pro
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,dreamweaver
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,dreamweaver
@@ -11,16 +11,6 @@ img/.orig/
 server.mjs
 crypto.mjs
 tests.mjs
-
-
-### Dreamweaver ###
-# DW Dreamweaver added files
-_notes
-_compareTemp
-configs/
-dwsync.xml
-dw_php_codehinting.config
-*.mno
 
 
 ### Node ###
@@ -181,6 +171,16 @@ out
 # Ignore all local history of files
 .history
 .ionide
+
+
+### Dreamweaver ###
+# DW Dreamweaver added files
+_notes
+_compareTemp
+configs/
+dwsync.xml
+dw_php_codehinting.config
+*.mno
 
 
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,dreamweaver

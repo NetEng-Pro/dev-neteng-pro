@@ -9,17 +9,17 @@ on:
 jobs:
   check-codeql:
     name: Check CodeQL Analysis
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Set up GitHub CLI
         run: sudo apt-get install gh
       - name: Authenticate GitHub CLI
-        run: gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
+        run: gh auth login --with-token <<< "${{ secrets.GH_TOKEN }}"
       - name: Check CodeQL Workflow
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           gh run list --workflow "CodeQL" --json conclusion --jq '.[0].conclusion' > codeql_status.txt
           CODEQL_STATUS=$(cat codeql_status.txt)
@@ -54,17 +54,27 @@ jobs:
             ${{ runner.os }}-node-
       - name: Install dependencies
         run: npm ci
+      - name: Debug - List files before build
+        run: ls -la
+      - name: Create dist directory
+        run: mkdir -p dist
       - name: Run tests using Mocha framework
         run: npm test
         continue-on-error: true
       - name: Build project
         run: npm run build
+      - name: Debug - List files after build
+        run: ls -la
+      - name: Ensure dist directory exists
+        run: mkdir -p dist
       - name: Copy package.json to dist directory
         run: cp package.json dist/
+      - name: Debug - List files in dist directory
+        run: ls -la dist/
 
   publish-npm:
     needs: build
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
@@ -100,8 +110,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git push origin HEAD:main
+      - name: Debug - List files in current directory before ensuring dist
+        run: ls -la
+      - name: Ensure dist directory exists
+        run: mkdir -p dist
+      - name: Debug - List files in current directory after ensuring dist
+        run: ls -la
       - name: Copy package.json to dist directory
         run: cp package.json dist/
+      - name: Debug - List files in dist directory
+        run: ls -la dist/
       - name: Publish package
         working-directory: ./dist
         run: npm publish --access public
