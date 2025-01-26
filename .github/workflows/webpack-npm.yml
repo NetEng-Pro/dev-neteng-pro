@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Engineering Pro
 
-# This workflow will lint all JavaScript with ESLint, run tests using node 20.x
-# and 22.x on both ubuntu-22.04 and ubuntu-24.04, and then publish a package to
-# npmjs when manually triggered
+# This workflow will lint all JavaScript with ESLint, check all formatting with
+# Prettier, run tests using node 20.x and 22.x on ubuntu-24.04, and then publish
+# a package to npmjs when manually triggered
 
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
@@ -15,17 +15,17 @@ on:
 jobs:
   check-codeql:
     name: Check CodeQL Analysis
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Set up GitHub CLI
         run: sudo apt-get install gh
       - name: Authenticate GitHub CLI
-        run: gh auth login --with-token <<< "${{ secrets.GHSU_TOKEN }}"
+        run: gh auth login --with-token <<< "${{ secrets.GH_PAT }}"
       - name: Check CodeQL Workflow
         env:
-          GH_TOKEN: ${{ secrets.GHSU_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           gh run list --workflow "CodeQL" --json conclusion --jq '.[0].conclusion' > codeql_status.txt
           CODEQL_STATUS=$(cat codeql_status.txt)
@@ -35,10 +35,9 @@ jobs:
 
   build:
     needs: check-codeql
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
-        os: [ubuntu-22.04, ubuntu-24.04]
         node-version: [20.x, 22.x]
     steps:
       - name: Checkout repository
@@ -79,7 +78,7 @@ jobs:
 
   publish-npm:
     needs: build
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       packages: write
@@ -111,7 +110,7 @@ jobs:
         run: npm version patch
       - name: Push version commit
         env:
-          GITHUB_TOKEN: ${{ secrets.GHSU_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git push origin HEAD:main
       - name: Debug - List files in current directory before ensuring dist

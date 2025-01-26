@@ -18,7 +18,6 @@ export default [
       '**/*.cjs'
     ],
     ignores: [
-      '**/bimi-svg-tiny-ps.xml',
       '**/dist/**/app.*.js',
       '**/dist/**/runtime.*.js',
       '**/.prettierrc',
