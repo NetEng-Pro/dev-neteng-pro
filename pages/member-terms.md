@@ -47,9 +47,7 @@ Web: <https://bio.neteng.pro>
 
 ## About
 
-Welcome to Network Engineering Pro (NetEng-Pro), a Free/Libre and Open Source
-community. By accessing or using any of our 'partner platforms', you agree to
-comply with the following Terms and Conditions ("T&C").
+Welcome to Network Engineering Pro (NetEng-Pro), a Free/Libre and Open Source community. By accessing or using any of our 'partner platforms', you agree to comply with the following Terms and Conditions ("T&C").
 
 ### _Partner Platforms_
 
@@ -64,32 +62,19 @@ comply with the following Terms and Conditions ("T&C").
 
 ## Terms
 
-1. **No Warranty:** NetEng-Pro provides its services on an "as is" and "as
-   available" basis. We make no warranty, express or implied, regarding the
-   quality, reliability, or availability of our services.
+1. **No Warranty:** NetEng-Pro provides its services on an "as is" and "as available" basis. We make no warranty, express or implied, regarding the quality, reliability, or availability of our services.
 
-2. **Use at Your Own Risk:** Individuals who choose to use NetEng-Pro 'partner
-   platforms' do so at their own risk. We cannot guarantee the security,
-   integrity, or reliability of the data stored on external infrastructure, over
-   which we have no control.
+2. **Use at Your Own Risk:** Individuals who choose to use NetEng-Pro 'partner platforms' do so at their own risk. We cannot guarantee the security, integrity, or reliability of the data stored on external infrastructure, over which we have no control.
 
-3. **Limitation of Liability:** In no event shall Network Engineering Pro or its
-   individual members be liable for any damages, including but not limited to
-   data loss, loss of profits, or any other incidental, consequential, or
-   punitive damages arising out of or related to the use of our partner
-   platforms.
+3. **Limitation of Liability:** In no event shall Network Engineering Pro or its individual members be liable for any damages, including but not limited to data loss, loss of profits, or any other incidental, consequential, or punitive damages arising out of or related to the use of our partner platforms.
 
-4. **Indemnification:** By using NetEng-Pro's partner platforms, you agree to
-   indemnify and hold us harmless from any claims, damages, losses, liabilities,
-   and expenses arising from your usage.
+4. **Indemnification:** By using NetEng-Pro's partner platforms, you agree to indemnify and hold us harmless from any claims, damages, losses, liabilities, and expenses arising from your usage.
 
-**By accessing or using Network Engineering Pro's website and/or partner
-platforms, as defined in this document, you acknowledge and agree to these Terms
-and Conditions.**
+**By accessing or using Network Engineering Pro's website and/or partner platforms, as defined in this document, you acknowledge and agree to these Terms and Conditions.**
 
 > **If you do not agree with any part of the terms outlined above, please
 > refrain from using our services.**
-
+>
 > ⚠️ Any access to or use of NetEng-Pro partner platforms, including but not
 > limited to GitHub, Slack, and/or Stack Overflow shall be considered an
 > implicit acceptance of the T&C outlined above.
@@ -100,16 +85,13 @@ and Conditions.**
 
 ---
 
-**Thank you for your application!** A Community Lead will review your
-information shortly and will be in touch soon. If approved, you'll be given
-three invites:
+**Thank you for your application!** A Community Lead will review your information shortly and will be in touch soon. If approved, you'll be given three invites:
 
 1. An invite to the GitHub organization
 2. An invite to our Slack workspace
 3. An invite to our Stack Overflow Team
 
-_Be on the lookout for an email message!_ All three may be sent in one email or
-multiple emails, depending on platform requirements.
+_Be on the lookout for an email message!_ All three may be sent in one email or multiple emails, depending on platform requirements.
 
 ---
 
@@ -119,25 +101,17 @@ Terms and Conditions last modified 1/23/2025. T&C are subject to change at any t
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
-and Open Source Software Community<br /> Copyright &copy; 2024-2025
-**[Scott Lopez](https://bio.neteng.pro)**
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community  
+Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
-the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published
-by the Free Software Foundation,  
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation,  
 either version 3 of the License, or (at your option) any later version.
 
 </code>
 
 This material is free to distribute, remix, adapt, and build upon for any
-purpose, including commercial use. As free software, it can be redistributed and
-modified under the
-[specified terms](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md#gnu-gpl).
+purpose, including commercial use. As free software, it can be redistributed and modified under the [specified terms](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md#gnu-gpl).
 
-NetEng-Pro is provided **_as is_** and **_as available_** without any
-warranties, express or implied. The Licensor makes no representations or
-guarantees regarding the Licensed Material and assumes no liability for its use.
+NetEng-Pro is provided **_as is_** and **_as available_** without any warranties, express or implied. The Licensor makes no representations or guarantees regarding the Licensed Material and assumes no liability for its use.
 
-For details, see
-[Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md).
+For details, see [Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md).

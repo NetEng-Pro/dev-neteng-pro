@@ -1,9 +1,10 @@
 {
   "name": "nwpro-web",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": false,
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "keywords": [
+    "neteng-pro",
     "android",
     "linux",
     "open-source",
@@ -12,11 +13,12 @@
     "foss",
     "security",
     "privacy",
-    "cybersecurity"
+    "cybersecurity",
+    "cyber security"
   ],
   "homepage": "https://netwk.pro",
   "bugs": {
-    "url": "https://github.com/NetEng-Pro/dev-neteng-pro/issues"
+    "url": "https://github.com/NetEng-Pro/neteng-pro.github.io/issues"
   },
   "repository": {
     "type": "git",
@@ -35,7 +37,7 @@
   },
   "scripts": {
     "test": "mocha \"test/**/*.js\" \"test/**/*.mjs\" \"test/**/*.cjs\"",
-    "lint": "eslint .",
+    "lint": "eslint . && prettier --check .",
     "start": "webpack serve --open --config webpack.config.dev.mjs",
     "build": "webpack --config webpack.config.prod.mjs"
   },
@@ -45,8 +47,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.26.7",
+    "@babel/parser": "^7.26.7",
     "@babel/preset-env": "^7.26.7",
-    "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.19.0",
     "babel-loader": "^9.2.1",
     "copy-webpack-plugin": "^11.0.0",
@@ -61,7 +63,6 @@
     "postcss": "^8.5.1",
     "postcss-loader": "^8.1.1",
     "prettier": "^3.4.2",
-    "prettier-eslint": "^16.3.0",
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.11",
     "webpack": "^5.97.1",
@@ -69,11 +70,5 @@
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^5.10.0"
   },
-  "browserslist": [
-    "defaults and fully supports es6-module",
-    "maintained node versions",
-    "last 2 versions",
-    "not dead"
-  ],
   "lockfileVersion": 3
 }

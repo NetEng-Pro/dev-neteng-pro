@@ -1,32 +1,30 @@
+// eslint.config.mjs
 /*
-SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
-This file is part of Network Engineering Pro
+  SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
+  This file is part of Network Engineering Pro
 */
 
-import { FlatCompat } from '@eslint/eslintrc';
-import js from '@eslint/js';
+import js from "@eslint/js";
+import prettierConfig from 'eslint-config-prettier';
 import mocha from 'eslint-plugin-mocha';
 import globals from 'globals';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
 
 export default [
-  ...compat.extends(
-    'eslint:recommended',
-    'plugin:mocha/recommended',
-    'prettier',
-  ),
+  js.configs.recommended,
   {
-    files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
-    ignores: ['**/dist/**/app.*.js','**/dist/**/runtime.*.js','**/.prettierrc', '**/.vscode', '**/node_modules'],
+    files: [
+      '**/*.js',
+      '**/*.mjs',
+      '**/*.cjs'
+    ],
+    ignores: [
+      '**/bimi-svg-tiny-ps.xml',
+      '**/dist/**/app.*.js',
+      '**/dist/**/runtime.*.js',
+      '**/.prettierrc',
+      '**/.vscode',
+      '**/node_modules'
+    ],
     plugins: {
       mocha,
     },
@@ -37,9 +35,10 @@ export default [
         ...globals.mocha,
       },
       ecmaVersion: 2022,
-      sourceType: 'module',  // Set the source type to ECMAScript module code
+      sourceType: 'module', // Set the source type to ECMAScript module code
     },
     rules: {
+      ...prettierConfig.rules,
       'mocha/no-exclusive-tests': 'error',
       'mocha/no-skipped-tests': 'warn',
       'mocha/no-hooks-for-single-case': 'warn',

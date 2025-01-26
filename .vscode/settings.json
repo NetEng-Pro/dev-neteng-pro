@@ -1,0 +1,10 @@
+{
+  "prettier.configPath": ".prettierrc",
+  "prettier.htmlWhitespaceSensitivity": "strict",
+  "prettier.bracketSameLine": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.quoteProps": "consistent",
+  "editor.defaultFoldingRangeProvider": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "notebook.defaultFormatter": "esbenp.prettier-vscode"
+}

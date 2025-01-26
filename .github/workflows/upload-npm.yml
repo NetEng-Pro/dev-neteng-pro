@@ -1,13 +1,13 @@
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Engineering Pro
-#
+
 # Simple workflow for deploying static content to GitHub pages
 
 name: Deploy static content to Pages
 
 on:
   workflow_run:
-    workflows: ['Build/Test Webpack, Publish to npm']
+    workflows: ["Build/Test Webpack, Publish to npm"]
     types:
       - completed
   workflow_dispatch:
@@ -21,7 +21,7 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist directory
-          path: './dist'
+          path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
