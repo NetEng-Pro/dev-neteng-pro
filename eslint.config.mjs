@@ -21,6 +21,13 @@ export default [
       '**/dist/**/app.*.js',
       '**/dist/**/runtime.*.js',
       '**/.prettierrc',
+      '**/.prettiercignore',
+      '**/.editorconfig',
+      '**/.browserlistrc',
+      '**/.babelrc',
+      '**/.gitignore',
+      '**/.gitattributes',
+      '**/bimi-svg-tiny-ps.xml',
       '**/.vscode',
       '**/node_modules'
     ],

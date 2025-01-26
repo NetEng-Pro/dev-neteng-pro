@@ -1,6 +1,6 @@
 {
   "name": "nwpro-web",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "private": false,
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "keywords": [
@@ -16,7 +16,7 @@
     "cybersecurity",
     "cyber security"
   ],
-  "homepage": "https://netwk.pro",
+  "homepage": "https://github.neteng.pro",
   "bugs": {
     "url": "https://github.com/NetEng-Pro/neteng-pro.github.io/issues"
   },

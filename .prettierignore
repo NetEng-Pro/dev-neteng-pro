@@ -14,3 +14,8 @@ eslint.config.mjs
 build
 coverage
 bimi-svg-tiny-ps.xml
+eslint.config.mjs
+.gitignore
+.gitattributes
+.editorconfig
+.babelrc
