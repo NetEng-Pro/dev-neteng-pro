@@ -10,12 +10,14 @@
 name: Build/Test Webpack, Publish to npm
 
 on:
+  release:
+    types: [created]
   workflow_dispatch:
 
 jobs:
   check-codeql:
     name: Check CodeQL Analysis
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -36,7 +38,7 @@ jobs:
 
   build:
     needs: check-codeql
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         node-version: [20.x, 22.x]
@@ -51,29 +53,26 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.node-version }}-build-${{
-            hashFiles('package-lock.json') }}
+          key: ${{ matrix.node-version }}
           restore-keys: |
-            ${{ runner.os }}-node-${{ matrix.node-version }}-build-
-            ${{ runner.os }}-node-${{ matrix.node-version }}-
-            ${{ runner.os }}-node-
+            ${{ matrix.node-version }}
       - name: Install dependencies
         run: npm ci
-      - name: Create dist directory
-        run: mkdir -p dist
       - name: Run tests using Mocha framework
         run: npm test
         continue-on-error: true
+      # Lint and format code in editor
+      #- name: Lint code and check formatting
+      #  run: npm run lint
+      #  continue-on-error: true
       - name: Build project
         run: npm run build
-      - name: Ensure dist directory exists
-        run: mkdir -p dist
       - name: Copy package.json to dist directory
         run: cp package.json dist/
 
   publish-npm:
     needs: build
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     permissions:
       contents: read
       packages: write
@@ -89,12 +88,9 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-20.x-publish-${{
-            hashFiles('package-lock.json') }}
+          key: 20.x
           restore-keys: |
-            ${{ runner.os }}-node-20.x-publish-
-            ${{ runner.os }}-node-20.x-
-            ${{ runner.os }}-node-
+            20.x
       - name: Install dependencies
         run: npm ci
       - name: Set up Git user
@@ -103,12 +99,10 @@ jobs:
           git config --global user.name "SunDevil311"
       - name: Increment version
         run: npm version patch
-      - name: Ensure dist directory exists
-        run: mkdir -p dist
       - name: Copy package.json to dist directory
         run: cp package.json dist/
       - name: Publish package
         working-directory: ./dist
-        run: npm publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
