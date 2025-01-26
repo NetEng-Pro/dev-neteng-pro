@@ -7,7 +7,7 @@
 
 ### Custom Ignores ###
 python-venv/
-img/.orig/
+.orig/
 server.mjs
 crypto.mjs
 tests.mjs
