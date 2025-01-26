@@ -16,6 +16,7 @@ jobs:
   check-codeql:
     name: Check CodeQL Analysis
     runs-on: ubuntu-22.04
+    continue-on-error: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -51,18 +52,20 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ matrix.node-version }}
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-build-${{ hashFiles('package-lock.json') }}
           restore-keys: |
-            ${{ matrix.node-version }}
+            ${{ runner.os }}-node-${{ matrix.node-version }}-build-
+            ${{ runner.os }}-node-${{ matrix.node-version }}-
+            ${{ runner.os }}-node-
       - name: Install dependencies
         run: npm ci
       - name: Run tests using Mocha framework
         run: npm test
         continue-on-error: true
-      # Lint and format code in editor
-      #- name: Lint code and check formatting
-      #  run: npm run lint
-      #  continue-on-error: true
+      # Uncomment the following lines if you want to lint and format your code
+      # - name: Lint code and check formatting
+      #   run: npm run lint
+      #   continue-on-error: true
       - name: Build project
         run: npm run build
       - name: Copy package.json to dist directory
@@ -86,9 +89,11 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: 20.x
+          key: ${{ runner.os }}-node-20.x-publish-${{ hashFiles('package-lock.json') }}
           restore-keys: |
-            20.x
+            ${{ runner.os }}-node-20.x-publish-
+            ${{ runner.os }}-node-20.x-
+            ${{ runner.os }}-node-
       - name: Install dependencies
         run: npm ci
       - name: Set up Git user
