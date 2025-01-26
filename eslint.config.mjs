@@ -40,7 +40,7 @@ export default [
       sourceType: 'module',  // Set the source type to ECMAScript module code
     },
     rules: {
-      'mocha/no-exclusive-tests': 'warn',
+      'mocha/no-exclusive-tests': 'error',
       'mocha/no-skipped-tests': 'warn',
       'mocha/no-hooks-for-single-case': 'warn',
       'indent': ['error', 2],
