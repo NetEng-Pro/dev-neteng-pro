@@ -34,7 +34,6 @@ jobs:
           if [[ "$CODEQL_STATUS" != "success" ]]; then
             echo "CodeQL Analysis did not succeed. Exiting..."
             exit 1
-          fi
 
   build:
     needs: check-codeql
@@ -105,11 +104,6 @@ jobs:
           git config --global user.name "SunDevil311"
       - name: Increment version
         run: npm version patch
-      - name: Push version commit
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        run: |
-          git push origin HEAD:master
       - name: Ensure dist directory exists
         run: mkdir -p dist
       - name: Copy package.json to dist directory

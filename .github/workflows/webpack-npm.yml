@@ -58,8 +58,6 @@ jobs:
             ${{ runner.os }}-node-
       - name: Install dependencies
         run: npm ci
-      - name: Debug - List files before build
-        run: ls -la
       - name: Create dist directory
         run: mkdir -p dist
       - name: Run tests using Mocha framework
@@ -67,14 +65,10 @@ jobs:
         continue-on-error: true
       - name: Build project
         run: npm run build
-      - name: Debug - List files after build
-        run: ls -la
       - name: Ensure dist directory exists
         run: mkdir -p dist
       - name: Copy package.json to dist directory
         run: cp package.json dist/
-      - name: Debug - List files in dist directory
-        run: ls -la dist/
 
   publish-npm:
     needs: build
@@ -89,7 +83,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://npm.pkg.github.com/
       - name: Cache Node.js modules
         uses: actions/cache@v3
         with:
@@ -108,21 +102,10 @@ jobs:
           git config --global user.name "SunDevil311"
       - name: Increment version
         run: npm version patch
-      - name: Push version commit
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        run: |
-          git push origin HEAD:master
-      - name: Debug - List files in current directory before ensuring dist
-        run: ls -la
       - name: Ensure dist directory exists
         run: mkdir -p dist
-      - name: Debug - List files in current directory after ensuring dist
-        run: ls -la
       - name: Copy package.json to dist directory
         run: cp package.json dist/
-      - name: Debug - List files in dist directory
-        run: ls -la dist/
       - name: Publish package
         working-directory: ./dist
         run: npm publish
