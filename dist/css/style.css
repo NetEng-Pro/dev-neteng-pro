@@ -88,6 +88,10 @@ a:active{
   width:75%;
 }
 
+.center-text{
+  text-align:center;
+}
+
 .hidden,[hidden]{
   display:none !important;
 }

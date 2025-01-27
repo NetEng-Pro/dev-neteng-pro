@@ -2,7 +2,6 @@
 # This file is part of Network Engineering Pro
 
 # Ignore artifacts
-
 **/assets/license
 **/.vscode
 **/.git
@@ -19,3 +18,4 @@ eslint.config.mjs
 .gitattributes
 .editorconfig
 .babelrc
+.npmrc

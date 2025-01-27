@@ -31,23 +31,26 @@ jobs:
       - name: Set up GitHub CLI
         run: sudo apt-get install gh
       - name: Authenticate GitHub CLI
-        run: gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
       - name: Check CodeQL Workflow
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           gh run list --workflow "CodeQL" --json conclusion --jq '.[0].conclusion' > codeql_status.txt
           CODEQL_STATUS=$(cat codeql_status.txt)
           if [[ "$CODEQL_STATUS" != "success" ]]; then
             echo "CodeQL Analysis did not succeed. Exiting..."
             exit 1
+          fi
+          rm codeql_status.txt
 
   build:
     needs: check-codeql
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ubuntu-22.04, ubuntu-24.04]
         node-version: [20.x, 22.x]
     steps:
       - name: Checkout repository
@@ -133,7 +136,7 @@ jobs:
         run: npm version patch
       - name: Push version commit
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/NetEng-Pro/dev-neteng-pro.git
+          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/NetEng-Pro/dev-neteng-pro.git
           git push origin HEAD:master

@@ -27,6 +27,7 @@ export default [
       '**/.babelrc',
       '**/.gitignore',
       '**/.gitattributes',
+      '**/.npmrc',
       '**/bimi-svg-tiny-ps.xml',
       '**/.vscode',
       '**/node_modules'
