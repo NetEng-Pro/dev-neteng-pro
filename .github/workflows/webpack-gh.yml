@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Engineering Pro
 
-# When this workflow is manually triggered, it will:
+# When a release is creeated or this workflow is manually triggered, it will:
 # (1) confirm the CodeQL analysis was successful, (2) test JavaScript using
 # Mocha framework, (3) lint all JavaScript with ESLint (if enabled), (4) check
 # all formatting with Prettier (if enabled), (5) run builds using node 20.x and
@@ -16,6 +16,8 @@
 name: Build/Test Webpack, Publish to GitHub Packages
 
 on:
+  release:
+    types: [created]
   workflow_dispatch:
 
 jobs:
@@ -172,13 +174,14 @@ jobs:
           NPM_EMAIL: github@sl.neteng.pro
 
       # Increment version and push commit upon successful publish
-      - name: Increment version
-        run: npm version patch
+      # non-functional for unknown reasons
+      #- name: Increment version
+      #  run: npm version patch
 
-      - name: Push version commit
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-        run: |
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/NetEng-Pro/dev-neteng-pro.git
-          git push origin HEAD:master
-        continue-on-error: true
+      #- name: Push version commit
+      #  env:
+      #    GH_PAT: ${{ secrets.GH_PAT }}
+      #  run: |
+      #    git remote set-url origin https://x-access-token:${{ secrets.GH_PAT #}}@github.com/NetEng-Pro/dev-neteng-pro.git
+      #    git push origin HEAD:master
+      #  continue-on-error: true
