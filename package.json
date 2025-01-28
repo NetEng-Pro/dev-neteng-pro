@@ -1,6 +1,9 @@
 {
-  "name": "nwpro-web",
+  "name": "@neteng-pro/nwpro-web",
   "version": "0.2.10",
+    "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "private": false,
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "keywords": [
@@ -17,9 +20,6 @@
     "cyber security"
   ],
   "homepage": "https://github.neteng.pro",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "bugs": {
     "url": "https://github.com/NetEng-Pro/neteng-pro.github.io/issues"
   },

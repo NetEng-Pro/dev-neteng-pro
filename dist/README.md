@@ -76,9 +76,8 @@ cost. To understand the deeper meaning of “free” in this context, check out:
 As a proud **member of the
 [Free Software Foundation (FSF)](https://www.fsf.org/)**, our mission is to
 promote and advance software freedom, aligning with the
-[FSF/GNU principles](https://www.gnu.org/philosophy/free-sw.html#fs-definition)
-and the four freedoms. However, we critically evaluate all available solutions
-to ensure the best approach for privacy, security, and user empowerment.
+[FSF/GNU principles](https://www.gnu.org/philosophy/free-sw.html)
+and the four essential freedoms. However, we critically evaluate all available solutions to ensure the best approach for privacy, security, and user empowerment.
 
 ### <a id="focus">Our Focus Areas</a>
 
@@ -195,18 +194,15 @@ provide _Best Practices_ documentation for beginners, among other content.
 
 ---
 
-| [![cc-by](https://forthebadge.com/images/badges/cc-by.png)](https://creativecommons.org/licenses/by/4.0/) | [![gnu-gpl](img/gpl3-small.png)](https://www.gnu.org/licenses/gpl-3.0.html) |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| [![cc-by](https://forthebadge.com/images/badges/cc-by.png)](https://creativecommons.org/licenses/by/4.0/) | [![gnu-gpl](img/gpl3-small.png)](https://www.gnu.org/licenses/gpl-3.0.html) | [[![fsf](img/fsf-member.png)]](https://my.fsf.org/join?referrer=6725885) |
+| :-------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
-and Open Source Software Community  
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community  
 Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
-the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published
-by the Free Software Foundation,  
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation,  
 either version 3 of the License, or (at your option) any later version.
 
 </code>
