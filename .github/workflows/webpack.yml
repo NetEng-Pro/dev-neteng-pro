@@ -64,7 +64,9 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.node-version }}-build-${{ hashFiles('package-lock.json') }}
+          key:
+            ${{ runner.os }}-node-${{ matrix.node-version }}-build-${{
+            hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ matrix.node-version }}-build-
             ${{ runner.os }}-node-${{ matrix.node-version }}-
@@ -110,7 +112,9 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-20.x-publish-${{ hashFiles('package-lock.json') }}
+          key:
+            ${{ runner.os }}-node-20.x-publish-${{
+            hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-20.x-publish-
             ${{ runner.os }}-node-20.x-
@@ -128,27 +132,36 @@ jobs:
       - name: DEBUG - List files in dist directory
         run: ls -la dist/
       # Configure npm to use GitHub Packages registry
-      - name: Configure npm for GitHub Packages
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" > ~/.npmrc
-      - name: Publish package
-        run: npm publish --registry=https://npm.pkg.github.com/
+      - name: Set up .npmrc for GitHub Packages
+        run:
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" >
+          ~/.npmrc
+      # Manually authenticate to npm
+      - name: Authenticate to npm
+        run: npm adduser --registry=https://npm.pkg.github.com/
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
+          NPM_USERNAME: sundevil311
+          NPM_PASSWORD: ${{ secrets.GH_PAT }}
+          NPM_EMAIL: github@sl.neteng.cc
+      # Publish to GitHub Packages
+      - name: Publish package to GitHub Packages
+        working-directory: ./dist
+        run: npm publish --registry=https://npm.pkg.github.com/
       # Configure npm to use npmjs registry
       - name: Set up .npmrc for npmjs
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+        run:
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
+          ~/.npmrc
       # Publish to npmjs
       - name: Publish package to npmjs
         working-directory: ./dist
-        run: npm publish --registry=https://registry.npmjs.org/ --access pnpmjs
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --registry=https://registry.npmjs.org/ --access public
       # Increment version and push commit upon successful publish
       - name: Increment version
         run: npm version patch
       - name: Push version commit
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/NetEng-Pro/dev-neteng-pro.git
           git push origin HEAD:master
