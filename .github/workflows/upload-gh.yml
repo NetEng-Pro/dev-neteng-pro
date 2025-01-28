@@ -24,10 +24,13 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+# Continue on error to prevent the workflow from stopping if there are issues
+# Intended to be used with manual trigger in the event of issues with publishing
 jobs:
   # Single deploy job since we're just deploying
   deploy:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    continue-on-error: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
