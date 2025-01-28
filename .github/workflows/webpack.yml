@@ -127,18 +127,20 @@ jobs:
         run: cp package.json dist/
       - name: DEBUG - List files in dist directory
         run: ls -la dist/
+      # Configure npm to use GitHub Packages registry
+      - name: Set up .npmrc for GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" > ~/.npmrc
       # Publish to GitHub Packages
       - name: Publish package to GitHub Packages
         working-directory: ./dist
         run: npm publish --registry=https://npm.pkg.github.com/
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
+      # Configure npm to use npmjs registry
+      - name: Set up .npmrc for npmjs
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       # Publish to npmjs
       - name: Publish package to npmjs
         working-directory: ./dist
         run: npm publish --registry=https://registry.npmjs.org/ --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       # Increment version and push commit upon successful publish
       - name: Increment version
         run: npm version patch
