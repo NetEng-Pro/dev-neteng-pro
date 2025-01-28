@@ -7,11 +7,7 @@ name: Deploy static content from ./dist to Pages
 
 on:
   workflow_run:
-    workflows:
-      [
-        "Build/Test Webpack, Publish to npm",
-        "Build/Test Webpack, Publish to GitHub Packages",
-      ]
+    workflows: ["Build/Test Webpack, Publish to GitHub Packages"]
     types:
       - completed
   workflow_dispatch:
