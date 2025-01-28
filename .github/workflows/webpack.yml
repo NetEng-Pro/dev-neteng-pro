@@ -170,12 +170,18 @@ jobs:
         run: npm publish --registry=https://npm.pkg.github.com/
         continue-on-error: true
 
-      # Publish to npmjs using NODE_AUTH_TOKEN
-      - name: Publish package to npmjs
-        working-directory: ./dist
-        run: npm publish --registry=https://registry.npmjs.org/ --access public
+      # Configure npm to use npmjs registry
+      - name: Set up .npmrc for npmjs
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
+      # Manually authenticate to npm for npmjs
+      - name: Authenticate to npm for npmjs
+        run: |
+          npm adduser --registry=https://registry.npmjs.org/
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_USERNAME: sundevil311
+          NPM_PASSWORD: ${{ secrets.NPM_TOKEN }}
+          NPM_EMAIL: github@sl.neteng.cc
 
       # Increment version and push commit upon successful publish
       - name: Increment version
