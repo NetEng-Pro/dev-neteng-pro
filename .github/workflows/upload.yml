@@ -3,11 +3,15 @@
 
 # Simple workflow for deploying static content to GitHub pages
 
-name: Deploy static content to Pages
+name: Deploy static content from ./dist to Pages
 
 on:
   workflow_run:
-    workflows: ["Build/Test Webpack, Publish to GitHub Packages and npmjs"]
+    workflows:
+      [
+        "Build/Test Webpack, Publish to npm",
+        "Build/Test Webpack, Publish to GitHub Packages",
+      ]
     types:
       - completed
   workflow_dispatch:
