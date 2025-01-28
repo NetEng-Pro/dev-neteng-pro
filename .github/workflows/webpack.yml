@@ -23,17 +23,20 @@ on:
 jobs:
   check-codeql:
     name: Check CodeQL Analysis
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Set up GitHub CLI
         run: sudo apt-get install gh
+
       - name: Authenticate GitHub CLI
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
+
       - name: Check CodeQL Workflow
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
@@ -56,42 +59,53 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+
       - name: Cache Node.js modules
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key:
-            ${{ runner.os }}-node-${{ matrix.node-version }}-build-${{
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-build-${{
             hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ matrix.node-version }}-build-
             ${{ runner.os }}-node-${{ matrix.node-version }}-
             ${{ runner.os }}-node-
+
       - name: Install dependencies
         run: npm ci
+
       - name: DEBUG - List files before build
         run: ls -la
+
       - name: Create dist directory
         run: mkdir -p dist
+
       - name: Run tests using Mocha framework
         run: npm test
         continue-on-error: true
+
       # Uncomment the following lines if you want to lint and format your code
       # - name: Lint code and check formatting
       #   run: npm run lint
       #   continue-on-error: true
+
       - name: Build project
         run: npm run build
+
       - name: DEBUG - List files after build
         run: ls -la
+
       - name: Ensure dist directory exists
         run: mkdir -p dist
+
       - name: Copy package.json to dist directory
         run: cp package.json dist/
+
       - name: DEBUG - List files in dist directory
         run: ls -la dist/
 
@@ -104,64 +118,72 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
+
       - name: Cache Node.js modules
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key:
-            ${{ runner.os }}-node-20.x-publish-${{
-            hashFiles('package-lock.json') }}
+          key: ${{ runner.os }}-node-20.x-publish-${{ hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-20.x-publish-
             ${{ runner.os }}-node-20.x-
             ${{ runner.os }}-node-
+
       - name: Install dependencies
         run: npm ci
+
       - name: Set up Git user
         run: |
           git config --global user.email "github@sl.neteng.cc"
           git config --global user.name "SunDevil311"
+
       - name: Ensure dist directory exists
         run: mkdir -p dist
+
       - name: Copy package.json to dist directory
         run: cp package.json dist/
+
       - name: DEBUG - List files in dist directory
         run: ls -la dist/
+
       # Configure npm to use GitHub Packages registry
       - name: Set up .npmrc for GitHub Packages
-        run:
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" >
-          ~/.npmrc
-      # Manually authenticate to npm
-      - name: Authenticate to npm
-        run: npm adduser --registry=https://npm.pkg.github.com/
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+
+      # Manually authenticate to npm for GitHub Packages
+      - name: Authenticate to npm for GitHub Packages
+        run: |
+          npm adduser --registry=https://npm.pkg.github.com/
         env:
           NPM_USERNAME: sundevil311
           NPM_PASSWORD: ${{ secrets.GH_PAT }}
           NPM_EMAIL: github@sl.neteng.cc
+
       # Publish to GitHub Packages
       - name: Publish package to GitHub Packages
         working-directory: ./dist
         run: npm publish --registry=https://npm.pkg.github.com/
-      # Configure npm to use npmjs registry
-      - name: Set up .npmrc for npmjs
-        run:
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
-          ~/.npmrc
-      # Publish to npmjs
+        continue-on-error: true
+
+      # Publish to npmjs using NODE_AUTH_TOKEN
       - name: Publish package to npmjs
         working-directory: ./dist
         run: npm publish --registry=https://registry.npmjs.org/ --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       # Increment version and push commit upon successful publish
       - name: Increment version
         run: npm version patch
+
       - name: Push version commit
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/NetEng-Pro/dev-neteng-pro.git
           git push origin HEAD:master
