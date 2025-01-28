@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Engineering Pro
 
-# When a release is created OR this workflow is manually triggered, it will:
+# When this workflow is manually triggered, it will:
 # (1) confirm the CodeQL analysis was successful, (2) test JavaScript using
 # Mocha framework, (3) lint all JavaScript with ESLint (if enabled), (4) check
 # all formatting with Prettier (if enabled), (5) run builds using node 20.x and
@@ -165,3 +165,4 @@ jobs:
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/NetEng-Pro/dev-neteng-pro.git
           git push origin HEAD:master
+        continue-on-error: true
