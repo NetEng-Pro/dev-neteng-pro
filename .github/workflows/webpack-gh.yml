@@ -120,7 +120,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
-          registry-url: https://npm.pkg.github.com/
 
       - name: Cache Node.js modules
         uses: actions/cache@v3
@@ -149,12 +148,30 @@ jobs:
       - name: DEBUG - List files in dist directory
         run: ls -la dist/
 
-      - name: Publish package
-        working-directory: ./dist
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
+      # Configure npm to use GitHub Packages registry
+      #- name: Set up .npmrc for GitHub Packages
+      #  run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN #}}" > ~/.npmrc
 
+      # Manually authenticate to npm for GitHub Packages
+      #- name: Authenticate to npm for GitHub Packages
+      #  run: |
+      #    npm adduser --registry=https://npm.pkg.github.com/
+      #  env:
+      #    NPM_USERNAME: sundevil311
+      #    NPM_PASSWORD: ${{ secrets.GH_PAT }}
+      #    NPM_EMAIL: github@sl.neteng.cc
+
+      # Manually authenticate to npm for GitHub Packages
+      - name: Authenticate to npm for GitHub Packages
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" > ~/.npmrc
+          npm adduser --registry=https://npm.pkg.github.com/
+        env:
+          NPM_USERNAME: sundevil311
+          NPM_PASSWORD: ${{ secrets.GH_PAT }}
+          NPM_EMAIL: github@sl.neteng.pro
+
+      # Increment version and push commit upon successful publish
       - name: Increment version
         run: npm version patch
 
@@ -164,3 +181,4 @@ jobs:
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/NetEng-Pro/dev-neteng-pro.git
           git push origin HEAD:master
+        continue-on-error: true
