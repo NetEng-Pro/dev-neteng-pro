@@ -82,6 +82,9 @@ export default {
   // Plugins
   plugins: [
     // Add any necessary plugins here
+    new self.DefinePlugin({
+      self: 'typeof self !== "undefined" ? self : this',
+    }),
   ],
   // Resolve settings
   resolve: {

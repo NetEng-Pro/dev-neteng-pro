@@ -27,6 +27,9 @@ export default merge(common, {
     minimizer: [
       new TerserPlugin({
         terserOptions: {
+          mangle: {
+            reserved: ["n", "t", "p"], // Prevent mangling of certain variables
+          },
           compress: {
             drop_console: true, // Remove console logs for better performance
           },
