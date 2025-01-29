@@ -9,7 +9,7 @@
 > > 📝 **_NOTE:_** Despite this article's age, I've yet to come across a better source of information with regard to SSH configuration.  
 > > ~ SunDevil311 ~
 
-[Skip to the good part.](#sshd)
+- [Skip to the good part.](#sshd)
 
 You may have heard that the NSA can decrypt SSH at least some of the time.
 If you have not, then read the [latest batch of Snowden documents][snowden-docs] now. All of it. This post will still be here when you finish. My goal with this post here is to make NSA analysts sad.
@@ -487,34 +487,52 @@ I promise not to use `git push -f`.
 
 ---
 
-[snowden-docs]: <https://www.spiegel.de/international/germany/inside-the-nsa-s-war-on-internet-security-a-1010361.html>)
-[compat]: <http://ssh-comparison.quendi.de/comparison.html>
-[dh]: <https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange>
-[ecdh]: <https://en.wikipedia.org/wiki/Elliptic_curve_Diffie%E2%80%93Hellman>
-[forward-secrecy]: <https://en.wikipedia.org/wiki/Forward_secrecy>
-[dlp]: <https://en.wikipedia.org/wiki/Discrete_logarithm_problem>
-[libsshdoc]: <https://git.libssh.org/projects/libssh.git/tree/doc/curve25519-sha256@libssh.org.txt>
-[curve25519]: <https://cr.yp.to/ecdh.html>
-[rfc4253]: <https://www.ietf.org/rfc/rfc4253.txt>
-[dh-draft]: <https://tools.ietf.org/html/draft-ietf-curdle-ssh-modp-dh-sha2-09>
-[73release]: <https://www.openssh.com/releasenotes.html#7.3>
-[76release]: <https://www.openssh.com/releasenotes.html#7.6>
-[rfc4419]: <https://www.ietf.org/rfc/rfc4419.txt>
-[ed25519]: <https://ed25519.cr.yp.to/>
-[google-auth]: <https://github.com/google/google-authenticator/wiki/PAM-Module-Instructions>
-[totp]: <https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm>
-[otp]: <https://www.cl.cam.ac.uk/~mgk25/otpw.html>
-[pam]: <https://en.wikipedia.org/wiki/Pluggable_authentication_module>
-[nist-sucks]: <https://blog.cr.yp.to/20140323-ecdsa.html>
-[bullrun]: <https://projectbullrun.org/dual-ec/vulnerability.html>
-[ecdsa-same-k]: <https://security.stackexchange.com/a/46781>
-[ecdsa-sony]: <https://events.ccc.de/congress/2010/Fahrplan/attachments/1780%5F27c3%5Fconsole%5Fhacking%5F2010.pdf>
-[ae]: <https://en.wikipedia.org/wiki/Authenticated_encryption>
-[aes-gcm]: <http://blog.djm.net.au/2013/11/chacha20-and-poly1305-in-openssh.html>
-[useroaming]: <https://security.stackexchange.com/questions/110639/how-exploitable-is-the-recent-useroaming-ssh-problem>
-[grsec]: <https://grsecurity.net/>
-[tor-hs]: <https://www.torproject.org/docs/hidden-services.html.en>
-[sssh-wiki]: <https://github.com/stribika/stribika.github.io/wiki/Secure-Secure-Shell>
-[changelog]: <https://github.com/stribika/stribika.github.io/commits/master/_posts/2015-01-04-secure-secure-shell.md>
-[bug779880]: <https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=779880>
+[snowden-docs]: <https://www.spiegel.de/international/germany/inside-the-nsa-s-war-on-internet-security-a-1010361.html>)  
+[compat]: <http://ssh-comparison.quendi.de/comparison.html>  
+[dh]: <https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange>  
+[ecdh]: <https://en.wikipedia.org/wiki/Elliptic_curve_Diffie%E2%80%93Hellman>  
+[forward-secrecy]: <https://en.wikipedia.org/wiki/Forward_secrecy>  
+[dlp]: <https://en.wikipedia.org/wiki/Discrete_logarithm_problem>  
+[libsshdoc]: <https://git.libssh.org/projects/libssh.git/tree/doc/curve25519-sha256@libssh.org.txt>  
+[curve25519]: <https://cr.yp.to/ecdh.html>  
+[rfc4253]: <https://www.ietf.org/rfc/rfc4253.txt>  
+[dh-draft]: <https://tools.ietf.org/html/draft-ietf-curdle-ssh-modp-dh-sha2-09>  
+[73release]: <https://www.openssh.com/releasenotes.html#7.3>  
+[76release]: <https://www.openssh.com/releasenotes.html#7.6>  
+[rfc4419]: <https://www.ietf.org/rfc/rfc4419.txt>  
+[ed25519]: <https://ed25519.cr.yp.to/>  
+[google-auth]: <https://github.com/google/google-authenticator/wiki/PAM-Module-Instructions>  
+[totp]: <https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm>  
+[otp]: <https://www.cl.cam.ac.uk/~mgk25/otpw.html>  
+[pam]: <https://en.wikipedia.org/wiki/Pluggable_authentication_module>  
+[nist-sucks]: <https://blog.cr.yp.to/20140323-ecdsa.html>  
+[bullrun]: <https://projectbullrun.org/dual-ec/vulnerability.html>  
+[ecdsa-same-k]: <https://security.stackexchange.com/a/46781>  
+[ecdsa-sony]: <https://events.ccc.de/congress/2010/Fahrplan/attachments/1780%5F27c3%5Fconsole%5Fhacking%5F2010.pdf>  
+[ae]: <https://en.wikipedia.org/wiki/Authenticated_encryption>  
+[aes-gcm]: <http://blog.djm.net.au/2013/11/chacha20-and-poly1305-in-openssh.html>  
+[useroaming]: <https://security.stackexchange.com/questions/110639/how-exploitable-is-the-recent-useroaming-ssh-problem>  
+[grsec]: <https://grsecurity.net/>  
+[tor-hs]: <https://www.torproject.org/docs/hidden-services.html.en>  
+[sssh-wiki]: <https://github.com/stribika/stribika.github.io/wiki/Secure-Secure-Shell>  
+[changelog]: <https://github.com/stribika/stribika.github.io/commits/master/_posts/2015-01-04-secure-secure-shell.md>  
+[bug779880]: <https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=779880>  
 [sloth]: <https://www.mitls.org/downloads/transcript-collisions.pdf>
+
+---
+
+<code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
+
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community  
+Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
+
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published by the Free Software Foundation,  
+either version 3 of the License, or (at your option) any later version.
+
+</code>
+
+<span style="text-align: center; font-size: 14px; font-weight: bold;">
+
+[Terms and Conditions](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/pages/terms.md) &nbsp; | &nbsp; [Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md)
+
+</span>
