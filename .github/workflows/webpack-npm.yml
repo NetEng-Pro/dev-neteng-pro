@@ -88,10 +88,9 @@ jobs:
         run: npm test
         continue-on-error: true
 
-      # Uncomment the following lines if you want to lint and format your code
-      # - name: Lint code and check formatting
-      #   run: npm run lint
-      #   continue-on-error: true
+      - name: Lint code and check formatting
+        run: npm run lint
+        continue-on-error: true
 
       - name: Build project
         run: npm run build

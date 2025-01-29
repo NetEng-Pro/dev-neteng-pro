@@ -1,6 +1,6 @@
 {
   "name": "@neteng-pro/nwpro-dev",
-  "version": "0.0.14",
+  "version": "0.1.0",
   "private": false,
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "keywords": [
@@ -35,8 +35,8 @@
   },
   "scripts": {
     "test": "mocha \"test/**/*.js\" \"test/**/*.mjs\" \"test/**/*.cjs\"",
-    "check": "eslint \"**/*.{js,mjs,cjs}\" && prettier --check .",
-    "lint": "eslint \"**/*.{js,mjs,cjs}\" --fix && prettier --write .",
+    "lint": "eslint \"**/*.{js,mjs,cjs}\" && prettier --check .",
+    "fix": "eslint \"**/*.{js,mjs,cjs}\" --fix && prettier --write .",
     "clean": "rm -rf dist node_modules",
     "start": "webpack serve --open --config webpack.config.dev.mjs",
     "build": "webpack --config webpack.config.prod.mjs",

@@ -5,7 +5,7 @@
 */
 
 import js from "@eslint/js";
-import prettierConfig from "eslint-config-prettier";
+import { default as eslintConfigPrettier, default as prettierConfig } from "eslint-config-prettier";
 import mocha from "eslint-plugin-mocha";
 import globals from "globals";
 
@@ -28,9 +28,9 @@ const ESLINT_RULES = {
   "mocha/no-exclusive-tests": "error",
   "mocha/no-skipped-tests": "warn",
   "mocha/no-hooks-for-single-case": "warn",
-  "indent": ["error", 2],
+  "indent": "off", // Turn off the 'indent' rule
   "quotes": "off", // Turn off the 'quotes' rule
-  "semi": ["error", "always"],
+  "semi": "off", // Turn off the 'semi' rule
 };
 
 export default [
@@ -45,5 +45,6 @@ export default [
       sourceType: "module"
     },
     rules: ESLINT_RULES
-  }
+  },
+  eslintConfigPrettier,
 ];
