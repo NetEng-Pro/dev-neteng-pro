@@ -168,8 +168,7 @@ and [Panorama management server](https://docs.paloaltonetworks.com/panorama).
 
 With several years of experience in Android development, I have a strong passion
 for integrating free and open source software (FLOSS) into my workflow. My
-journey began with a desire to replace proprietary apps with open source
-alternatives, and ever since, I’ve been exploring and curating the best FLOSS
+journey began with a desire to replace proprietary apps with open source alternatives, and ever since, I’ve been exploring and curating the best FLOSS
 apps available.
 
 Additionally, I've been exploring various self-hosted solutions and plan to

@@ -43,8 +43,7 @@ Email: <contact@neteng.pro>
 Web: <https://bio.neteng.pro>
 -->
 
-<a rel="noopener noreferrer" href="<https://spdx.dev/learn/handling-license-info/">SPDX-License-Identifier:</a>
-CC-BY-4.0 OR GPL-3.0-or-later
+[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/): `CC-BY-4.0 OR GPL-3.0-or-later`
 
 # <a id="top">Network Engineering Pro</a>
 
@@ -135,11 +134,7 @@ on privacy-centric apps and projects.** We wholeheartedly encourage (and expect)
 community input to enrich and maintain our collective knowledge base.
 
 Individual-driven projects and lists inevitably become outdated quickly; it is
-our belief that effective lists and privacy documentation **_MUST_** be
-community-driven and maintained.
-[NetEng-Pro Discussions](https://discuss.neteng.pro) on GitHub will serve as our
-primary collaboration platform. Slack and a Stack Overflow Team are also
-available to community members.
+our belief that effective lists and privacy documentation **_MUST_** be community-driven and maintained. [NetEng-Pro Discussions](https://discuss.neteng.pro) on GitHub will serve as our primary collaboration platform. Slack and a Stack Overflow Team are also available to community members.
 
 &nbsp;
 
@@ -173,8 +168,7 @@ and [Panorama management server](https://docs.paloaltonetworks.com/panorama).
 
 With several years of experience in Android development, I have a strong passion
 for integrating free and open source software (FLOSS) into my workflow. My
-journey began with a desire to replace proprietary apps with open source
-alternatives, and ever since, I’ve been exploring and curating the best FLOSS
+journey began with a desire to replace proprietary apps with open source alternatives, and ever since, I’ve been exploring and curating the best FLOSS
 apps available.
 
 Additionally, I've been exploring various self-hosted solutions and plan to
@@ -207,13 +201,8 @@ either version 3 of the License, or (at your option) any later version.
 
 </code>
 
-This material is free to distribute, remix, adapt, and build upon for any
-purpose, including commercial use. As free software, it can be redistributed and
-modified under the
-[specified terms](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md#gnu-gpl).
+<span style="text-align: center; font-size: 14px; font-weight: bold;">
 
-NetEng-Pro is provided **_as is_** and **_as available_** without any
-warranties, express or implied. The Licensor makes no representations or
-guarantees regarding the Licensed Material and assumes no liability for its use.
+[Terms and Conditions](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/pages/terms.md) &nbsp; | &nbsp; [Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md)
 
-<span style="text-align: center;">[Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md)</span>
+</span>
