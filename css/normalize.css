@@ -1,5 +1,8 @@
-/* This file is part of Network Engineering Pro */
-/* The original file has been modified to prevent conflicts with style.css */
+/*
+  This file is part of Network Engineering Pro
+  The original file has been modified to prevent conflicts with style.css
+*/
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -54,7 +57,9 @@ h1 {
 
 hr {
   box-sizing: content-box; /* 1 */
+
   /* height: 0; /* CONFLICTS /* 1 */
+
   /* overflow: visible; /* 2 */
 }
 
@@ -348,6 +353,7 @@ template {
  * CONFLICTS WITH STYLE.CSS
  * Add the correct display in IE 10.
  */
+
 /*
 [hidden] {
   display: none;

@@ -4,6 +4,7 @@ SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Engineering Pro
 */
 
+import autoprefixer from "autoprefixer";
 import path from "path";
 
 export default {
@@ -45,7 +46,12 @@ export default {
             loader: "postcss-loader",
             options: {
               postcssOptions: {
-                plugins: [], // Remove postcss-normalize plugin
+                plugins: [
+                  autoprefixer({
+                    add: true,
+                    remove: false,
+                  }),
+                ],
               },
             },
           },
@@ -82,9 +88,6 @@ export default {
   // Plugins
   plugins: [
     // Add any necessary plugins here
-    new self.DefinePlugin({
-      self: 'typeof self !== "undefined" ? self : this',
-    }),
   ],
   // Resolve settings
   resolve: {

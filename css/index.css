@@ -53,7 +53,7 @@ Web: <https://bio.neteng.pro>
 .gh {
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .gh td {
@@ -80,17 +80,19 @@ Web: <https://bio.neteng.pro>
   vertical-align: middle;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
   .gh {
     width: auto !important;
   }
+
   .gh col {
     width: auto !important;
   }
+
   .gh-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin: auto 0px;
+    margin: auto 0;
   }
 }
 
@@ -98,7 +100,7 @@ Web: <https://bio.neteng.pro>
 .soc {
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .soc td {
@@ -125,17 +127,19 @@ Web: <https://bio.neteng.pro>
   vertical-align: middle;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
   .soc {
     width: auto !important;
   }
+
   .soc col {
     width: auto !important;
   }
+
   .soc-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin: auto 0px;
+    margin: auto 0;
   }
 }
 
@@ -143,7 +147,7 @@ Web: <https://bio.neteng.pro>
 .tg {
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .tg td {
@@ -170,17 +174,19 @@ Web: <https://bio.neteng.pro>
   vertical-align: middle;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
   .tg {
     width: auto !important;
   }
+
   .tg col {
     width: auto !important;
   }
+
   .tg-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin: auto 0px;
+    margin: auto 0;
   }
 }
 

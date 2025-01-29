@@ -5,6 +5,7 @@
 /*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -95,11 +96,11 @@ textarea {
  */
 
 body {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: #191919;
   color: #fafafa;
-  margin: 10px 10px;
+  margin: 10px;
 }
 
 /* parent link element */
@@ -192,6 +193,7 @@ a:active {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+
   /* 1 */
 }
 
@@ -243,14 +245,14 @@ a:active {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (width >= 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+  (resolution >= 1.25dppx),
+  (resolution >= 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -266,6 +268,7 @@ a:active {
   *::after {
     background: #fff !important;
     color: #000 !important;
+
     /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
