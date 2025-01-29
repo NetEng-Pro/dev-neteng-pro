@@ -1,13 +1,15 @@
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Engineering Pro
-
-# Simple workflow for deploying static content to GitHub pages
+#
+# Deploy static content from ./dist to GitHub Pages when the "Build/Test
+# Webpack, Publish to npm" workflow completes successfully OR when manually
+# triggered.
 
 name: Deploy static content from ./dist to Pages
 
 on:
   workflow_run:
-    workflows: ["Build/Test Webpack, Publish to GitHub Packages"]
+    workflows: ["Build/Test Webpack, Publish to npm"]
     types:
       - completed
   workflow_dispatch:
@@ -24,13 +26,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-# Continue on error to prevent the workflow from stopping if there are issues
-# Intended to be used with manual trigger in the event of issues with publishing
 jobs:
   # Single deploy job since we're just deploying
   deploy:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    continue-on-error: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

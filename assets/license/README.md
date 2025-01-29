@@ -43,8 +43,7 @@ Email: <contact@neteng.pro>
 Web: <https://bio.neteng.pro>
 -->
 
-<a href="https://spdx.dev/learn/handling-license-info/">SPDX-License-Identifier:</a>
-CC-BY-4.0 OR GPL-3.0-or-later
+[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/): `CC-BY-4.0 OR GPL-3.0-or-later`
 
 # <a id="top">Copyright and Licensing</a>
 
@@ -64,9 +63,8 @@ CC-BY-4.0 OR GPL-3.0-or-later
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
-and Open Source Software Community <br /> Copyright &copy; 2024-2025
-**[Scott Lopez](https://bio.neteng.pro)**
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community  
+Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
 </code>
 
@@ -128,7 +126,7 @@ scope of either license, please email me at `contact (at) neteng.pro`.
 
 ---
 
-### <a id="cc-by">Creative Commons Attribution 4.0 International</a>
+## <a id="cc-by">Creative Commons Attribution 4.0 International</a>
 
 <sup>Formats: [XMP](assets/license/CC-BY-4.0.xmp) |
 [Markdown](assets/license/CC-BY-4.0.md) |
@@ -167,7 +165,7 @@ this License—may be available as further defined within this document.
 
 ---
 
-### <a id="gnu-gpl">GNU General Public License</a>
+## <a id="gnu-gpl">GNU General Public License</a>
 
 <sup>Formats: [Markdown](assets/license/COPYING.md) |
 [ODT](assets/license/COPYING.odt)</sup>
@@ -234,13 +232,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
-**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
-and Open Source Software Community  
+**[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community  
 Copyright &copy; 2024-2025 **[Scott Lopez](https://bio.neteng.pro)**
 
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
-the **[GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html)**, as published by
-the Free Software Foundation,  
+Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and the **[GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html)**, as published by the Free Software Foundation,  
 either version 3 of the License, or (at your option) any later version.
 
 </code>

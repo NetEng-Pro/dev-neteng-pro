@@ -110,7 +110,7 @@ jobs:
 
   publish-npm:
     needs: build
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       packages: write
@@ -149,19 +149,6 @@ jobs:
 
       - name: DEBUG - List files in dist directory
         run: ls -la dist/
-
-      # Configure npm to use GitHub Packages registry
-      #- name: Set up .npmrc for GitHub Packages
-      #  run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN #}}" > ~/.npmrc
-
-      # Manually authenticate to npm for GitHub Packages
-      #- name: Authenticate to npm for GitHub Packages
-      #  run: |
-      #    npm adduser --registry=https://npm.pkg.github.com/
-      #  env:
-      #    NPM_USERNAME: sundevil311
-      #    NPM_PASSWORD: ${{ secrets.GH_PAT }}
-      #    NPM_EMAIL: github@sl.neteng.cc
 
       # Manually authenticate to npm for GitHub Packages
       - name: Authenticate to npm for GitHub Packages

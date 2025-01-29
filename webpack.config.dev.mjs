@@ -11,6 +11,10 @@ import common from "./webpack.common.mjs";
 export default merge(common, {
   mode: "development", // Set the mode to development
   devtool: "inline-source-map", // Enable inline source maps for better debugging
+  stats: "errors-only", // Show only errors in console
+  infrastructureLogging: {
+    level: "error", // Suppress Webpack internal logs
+  },
   devServer: {
     liveReload: true, // Enable live reloading
     hot: true, // Enable hot module replacement

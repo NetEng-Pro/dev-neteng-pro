@@ -184,9 +184,9 @@ provide _Best Practices_ documentation for beginners, among other content.
 
 ## 🔗 Links
 
-| [![linktr.ee](https://img.shields.io/badge/linktree-43E55E?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/scottlopez)   | [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/scottlopez) |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![mastodon](https://img.shields.io/badge/Mastodon-6364FF?style=for-the-badge&logo=Mastodon&logoColor=white)](https://noc.social/@sundevil311) | [![xda](https://img.shields.io/badge/xda%20developers-2DAAE9?style=for-the-badge&logo=xda-developers&logoColor=white)](https://xda.neteng.pro)    |
+|  [![linktr.ee](https://img.shields.io/badge/linktree-43E55E?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/scottlopez)  | [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/scottlopez) |
+| :--------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
+| [![mastodon](https://img.shields.io/badge/Mastodon-6364FF?style=for-the-badge&logo=Mastodon&logoColor=white)](https://noc.social/@sundevil311) |  [![xda](https://img.shields.io/badge/xda%20developers-2DAAE9?style=for-the-badge&logo=xda-developers&logoColor=white)](https://xda.neteng.pro)   |
 
 &nbsp; <!-- space for clarity -->
 
@@ -194,8 +194,8 @@ provide _Best Practices_ documentation for beginners, among other content.
 
 ---
 
-| [![cc-by](https://forthebadge.com/images/badges/cc-by.png)](https://creativecommons.org/licenses/by/4.0/) | [![gnu-gpl](img/gpl3-small.png)](https://www.gnu.org/licenses/gpl-3.0.html) | [[![fsf](img/fsf-member.png)]](https://my.fsf.org/join?referrer=6725885) |
-| :-------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| [![cc-by](https://forthebadge.com/images/badges/cc-by.png)](https://creativecommons.org/licenses/by/4.0/) | [![gnu-gpl](img/gpl3-small.png)](https://www.gnu.org/licenses/gpl-3.0.html) | [![fsf](img/fsf-member.png)](https://my.fsf.org/join?referrer=6725885) |
+| :-------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
@@ -216,5 +216,4 @@ NetEng-Pro is provided **_as is_** and **_as available_** without any
 warranties, express or implied. The Licensor makes no representations or
 guarantees regarding the Licensed Material and assumes no liability for its use.
 
-For details, see
-[Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md).
+<span style="text-align: center;">[Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md)</span>

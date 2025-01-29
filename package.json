@@ -1,6 +1,6 @@
 {
   "name": "@neteng-pro/nwpro-dev",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": false,
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "keywords": [
@@ -8,13 +8,11 @@
     "android",
     "linux",
     "open-source",
-    "open source",
     "floss",
     "foss",
     "security",
     "privacy",
-    "cybersecurity",
-    "cyber security"
+    "cybersecurity"
   ],
   "homepage": "https://github.neteng.pro",
   "bugs": {
@@ -36,8 +34,11 @@
     "test": "test"
   },
   "scripts": {
+    "pretest": "npm run check",
     "test": "mocha \"test/**/*.js\" \"test/**/*.mjs\" \"test/**/*.cjs\"",
-    "lint": "eslint . && prettier --check .",
+    "check": "eslint \"**/*.{js,mjs,cjs}\" && prettier --check .",
+    "lint": "eslint \"**/*.{js,mjs,cjs}\" --fix && prettier --write .",
+    "clean": "rm -rf dist node_modules",
     "start": "webpack serve --open --config webpack.config.dev.mjs",
     "build": "webpack --config webpack.config.prod.mjs"
   },
@@ -47,7 +48,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.26.7",
-    "@babel/parser": "^7.26.7",
     "@babel/preset-env": "^7.26.7",
     "@eslint/js": "^9.19.0",
     "babel-loader": "^9.2.1",
@@ -69,6 +69,5 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^5.10.0"
-  },
-  "lockfileVersion": 3
+  }
 }
