@@ -51,6 +51,10 @@ export default {
           },
         ],
       },
+      {
+        test: /\.jsx?$/, // Apply this rule to .jsx and .js files
+        use: ["babel-loader", "astroturf/loader"],
+      },
     ],
   },
   // Optimization settings
