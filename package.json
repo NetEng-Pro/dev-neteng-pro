@@ -1,6 +1,6 @@
 {
   "name": "@neteng-pro/nwpro-dev",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": false,
   "description": "Free/Libre & Open Source Software, security, and digital privacy for Android & Linux",
   "keywords": [
@@ -34,7 +34,6 @@
     "test": "test"
   },
   "scripts": {
-    "pretest": "npm run check",
     "test": "mocha \"test/**/*.js\" \"test/**/*.mjs\" \"test/**/*.cjs\"",
     "check": "eslint \"**/*.{js,mjs,cjs}\" && prettier --check .",
     "lint": "eslint \"**/*.{js,mjs,cjs}\" --fix && prettier --write .",
