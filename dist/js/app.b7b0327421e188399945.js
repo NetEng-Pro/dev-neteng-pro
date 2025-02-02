@@ -4,10 +4,13 @@
   self.webpackChunk_neteng_pro_nwpro_dev || []).push([
   [524],
   {
-    428: () => {},
+    428: () => {
+      var e;
+      void 0 === (e = void 0).self && (e.self = e);
+    },
   },
   (e) => {
-    var _;
-    (_ = 428), e((e.s = _));
+    var s;
+    (s = 428), e((e.s = s));
   },
 ]);
