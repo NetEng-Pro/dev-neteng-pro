@@ -5,12 +5,11 @@
   [524],
   {
     428: () => {
-      var e;
-      void 0 === (e = void 0).self && (e.self = e);
+      (void 0).self;
     },
   },
   (e) => {
-    var s;
-    (s = 428), e((e.s = s));
+    var _;
+    (_ = 428), e((e.s = _));
   },
 ]);

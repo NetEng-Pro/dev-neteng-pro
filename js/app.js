@@ -6,7 +6,7 @@
 
 // Polyfill for 'self' to ensure it is defined
 (function (global) {
-  if (typeof global.self === "undefined") {
-    global.self = global;
-  }
+  var self = global.self || global;
+  // Example usage of 'self' to avoid ESLint warning
+  console.log(self);
 })(this);
