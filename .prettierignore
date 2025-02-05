@@ -11,12 +11,13 @@
 **/node_modules
 package.json
 eslint.config.mjs
+babel.config.json
 build
 coverage
 bimi-svg-tiny-ps.xml
-eslint.config.mjs
 .gitignore
 .gitattributes
 .editorconfig
-.babelrc
+.browserlistrc
 .npmrc
+.stylelintrc.json

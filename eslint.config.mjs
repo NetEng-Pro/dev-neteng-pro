@@ -14,7 +14,9 @@ const IGNORED_FILES = [
   "**/node_modules/**",
   ".*", // Ignores all dotfiles (.prettierrc, .babelrc, etc.)
   "**/*.xml", // Exclude non-JS files like bimi-svg-tiny-ps.xml
-  "**/.vscode/**"
+  "**/.vscode/**",
+  "**/babel.config.json",
+  "**/package.json"
 ];
 
 const GLOBALS = {
