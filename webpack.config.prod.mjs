@@ -91,6 +91,7 @@ export default merge(common, {
         { from: "img", to: "img" },
         { from: "css", to: "css" },
         { from: "pages", to: "pages" },
+        { from: "legal", to: "legal" },
         { from: "js/vendor", to: "js/vendor" },
         { from: "favicon.svg", to: "favicon.svg" },
         { from: "favicon.ico", to: "favicon.ico" },
