@@ -48,11 +48,11 @@ Web: <https://bio.neteng.pro>
 ### 1. Introduction
 
 Welcome to Network Engineering Pro ("NetEng-Pro"), a Free/Libre and Open Source
-Software (FLOSS) Community. By accessing or using any of our platforms, you
-agree to be bound by these Terms and Conditions ("T&C"). If you do not agree to
-these terms, you must refrain from using our services. _In this document,
-"Network Engineering Pro" and "NetEng-Pro" collectively refer to the community,
-its platforms, and all individual members._
+Software Community. By accessing or using any of our platforms, you agree to be
+bound by these Terms and Conditions ("T&C"). If you do not agree to these terms,
+you must refrain from using our services. _In this document, "Network
+Engineering Pro" and "NetEng-Pro" collectively refer to the community, its
+platforms, and all individual members._
 
 ℹ️ **These terms safeguard both the community and its members from potential
 legal issues arising from the use of our services.**
@@ -108,7 +108,14 @@ related to your use of our services.
 
 ### 7. Governing Law and Jurisdiction
 
-NetEng-Pro is an unincorporated nonprofit organization based in Arizona, United States. Any legal action or dispute arising from these Terms and Conditions shall be brought exclusively in the courts of Maricopa County, Arizona, United States. These Terms and Conditions shall be governed by and construed in accordance with the Arizona Revised Statutes (ARS) and applicable provisions of the United States Code (USC).
+Network Engineering Pro is an unincorporated nonprofit organization based in
+Arizona, United States. Any legal action or dispute arising from these Terms and
+Conditions shall be resolved exclusively in the courts of Maricopa County,
+Arizona, or the U.S. District Court for the District of Arizona. These Terms and
+Conditions are governed by and construed in accordance with the
+[Arizona Revised Statutes](https://www.azleg.gov/arstitle/) ("A.R.S") and
+applicable provisions of the [United States Code](https://uscode.house.gov/)
+("U.S.C.").
 
 ### 8. Acceptance of Terms
 
@@ -126,11 +133,11 @@ discontinue use of all NetEng-Pro platforms immediately._**
 
 ---
 
-<pre style="display: block; white-space: pre-wrap;">
-Terms and Conditions last modified 2/2/2025. T&C are subject to change at any time, for any reason, without notice.
-</pre>
+<code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none; text-align: center;">
 
-<code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
+**Terms and Conditions last modified 2/6/2025. T&C are subject to change at any time, for any reason, without notice.**
+
+&nbsp;
 
 **[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre
 and Open Source Software Community  
@@ -143,9 +150,11 @@ either version 3 of the License, or (at your option) any later version.
 
 </code>
 
+&nbsp;
+
 <span style="text-align: center; font-size: 14px; font-weight: bold;">
 
-[Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md)
+[Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/legal/LICENSE.md)
 &nbsp; | &nbsp; Terms and Conditions
 
 </span>

@@ -196,17 +196,18 @@ Web: <https://bio.neteng.pro>
 
 .center-nav {
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
 }
 
 .index1 {
+  font-size: 16px;
   text-align: center;
   font-style: italic;
-  font-variant: small-caps;
 }
 
 .index2 {
+  font-size: 20px;
   font-variant: small-caps;
   text-align: center;
 }
@@ -227,7 +228,7 @@ Web: <https://bio.neteng.pro>
 }
 
 .copyright {
-  font-size: small;
+  text-align: 12px;
   text-align: center;
 }
 
@@ -239,7 +240,7 @@ Web: <https://bio.neteng.pro>
 }
 
 .tandc {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
 }
