@@ -6,7 +6,7 @@
 
   <url>
 
-    <loc>https://neteng.pro/</loc>
+    <loc>https://neteng.pro</loc>
 
     <lastmod>2025-02-02</lastmod>
 
@@ -42,13 +42,13 @@
 
   <url>
 
-    <loc>https://neteng.pro/assets/TERMS.md</loc>
+    <loc>https://neteng.pro/legal/TERMS.md</loc>
 
     <lastmod>2025-02-02</lastmod>
 
     <changefreq>yearly</changefreq>
 
-    <priority>0.2</priority>
+    <priority>0.6</priority>
 
   </url>
 
@@ -61,6 +61,18 @@
     <changefreq>monthly</changefreq>
 
     <priority>0.6</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://neteng.pro/legal/MEMBER_TERMS.md</loc>
+
+    <lastmod>2025-02-02</lastmod>
+
+    <changefreq>yearly</changefreq>
+
+    <priority>0.5</priority>
 
   </url>
 
@@ -121,18 +133,6 @@
     <changefreq>yearly</changefreq>
 
     <priority>0.3</priority>
-
-  </url>
-
-  <url>
-
-    <loc>https://neteng.pro/pages/member-terms.md</loc>
-
-    <lastmod>2025-02-02</lastmod>
-
-    <changefreq>yearly</changefreq>
-
-    <priority>0.2</priority>
 
   </url>
 
