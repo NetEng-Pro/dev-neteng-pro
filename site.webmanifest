@@ -3,12 +3,12 @@
   "name": "Network Engineering Pro",
   "icons": [
     {
-      "src": "favicon-192.png",
+      "src": "favicon-512.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     }
   ],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#191919",
-  "theme_color": "#FFC627"
+  "theme_color": "#ffc627"
 }

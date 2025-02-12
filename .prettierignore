@@ -3,21 +3,17 @@
 #
 # Ignore artifacts
 
-**/assets/license
+.*
+**/*.xml
 **/.vscode
 **/.git
 **/.svn
 **/.hg
+**/dist
 **/node_modules
-package.json
+**/assets/license
+postcss.config.js
 eslint.config.mjs
 babel.config.json
 build
 coverage
-bimi-svg-tiny-ps.xml
-.gitignore
-.gitattributes
-.editorconfig
-.browserlistrc
-.npmrc
-.stylelintrc.json

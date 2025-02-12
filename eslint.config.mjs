@@ -5,24 +5,29 @@
 */
 
 import js from "@eslint/js";
-import { default as eslintConfigPrettier, default as prettierConfig } from "eslint-config-prettier";
+import {
+  default as eslintConfigPrettier,
+  default as prettierConfig,
+} from "eslint-config-prettier";
 import mocha from "eslint-plugin-mocha";
 import globals from "globals";
 
 const IGNORED_FILES = [
-  "**/dist/**",
-  "**/node_modules/**",
   ".*", // Ignores all dotfiles (.prettierrc, .babelrc, etc.)
   "**/*.xml", // Exclude non-JS files like bimi-svg-tiny-ps.xml
   "**/.vscode/**",
+  "**/dist/**",
+  "**/node_modules/**",
+  "**/assets/license/**",
   "**/babel.config.json",
-  "**/package.json"
+  "**/package.json",
+  "**/package-lock.json",
 ];
 
 const GLOBALS = {
   ...globals.browser,
   ...globals.node,
-  ...globals.mocha
+  ...globals.mocha,
 };
 
 const ESLINT_RULES = {
@@ -44,9 +49,9 @@ export default [
     languageOptions: {
       globals: GLOBALS,
       ecmaVersion: "latest", // Auto-upgrade ECMAScript version
-      sourceType: "module"
+      sourceType: "module",
     },
-    rules: ESLINT_RULES
+    rules: ESLINT_RULES,
   },
   eslintConfigPrettier,
 ];
