@@ -111,19 +111,24 @@
 }
 
 .center-nav {
-  font-size: 16px;
+  font-size: 14px;
   padding: 10px;
   text-align: center;
 }
 
 .index1 {
+  font-size: 16px;
   font-style: italic;
 }
 
 .index1,
 .index2 {
-  font-variant: small-caps;
   text-align: center;
+}
+
+.index2 {
+  font-size: 20px;
+  font-variant: small-caps;
 }
 
 .community {
@@ -142,7 +147,7 @@
 }
 
 .copyright {
-  font-size: small;
+  text-align: 12px;
   text-align: center;
 }
 
@@ -154,7 +159,7 @@
 }
 
 .tandc {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   text-align: center;
 }
