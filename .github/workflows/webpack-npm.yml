@@ -13,7 +13,7 @@
 #
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
-name: Build/Test Webpack, Publish to npm
+name: Build/Test Webpack, Publish to npmjs
 
 on:
   release:
@@ -69,7 +69,9 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.node-version }}-build-${{ hashFiles('package-lock.json') }}
+          key:
+            ${{ runner.os }}-node-${{ matrix.node-version }}-build-${{
+            hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ matrix.node-version }}-build-
             ${{ runner.os }}-node-${{ matrix.node-version }}-
@@ -79,7 +81,7 @@ jobs:
         run: npm ci
 
       #- name: DEBUG - List files before build
-        #run: ls -la
+      #run: ls -la
 
       - name: Create dist directory
         run: mkdir -p dist
@@ -96,7 +98,7 @@ jobs:
         run: npm run build
 
       #- name: DEBUG - List files after build
-        #run: ls -la
+      #run: ls -la
 
       - name: Ensure dist directory exists
         run: mkdir -p dist
@@ -104,8 +106,8 @@ jobs:
       - name: Copy package.json to dist directory
         run: cp package.json dist/
 
-      #- name: DEBUG - List files in dist directory
-        #run: ls -la dist/
+      - name: DEBUG - List files in dist directory
+        run: ls -la dist/
 
   publish-npm:
     needs: build
@@ -127,10 +129,12 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-20.x-publish-${{ hashFiles('package-lock.json') }}
+          key:
+            ${{ runner.os }}-node-22.x-publish-${{
+            hashFiles('package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-20.x-publish-
-            ${{ runner.os }}-node-20.x-
+            ${{ runner.os }}-node-22.x-publish-
+            ${{ runner.os }}-node-22.x-
             ${{ runner.os }}-node-
 
       - name: Install dependencies
@@ -147,8 +151,8 @@ jobs:
       - name: Copy package.json to dist directory
         run: cp package.json dist/
 
-      #- name: DEBUG - List files in dist directory
-        #run: ls -la dist/
+      - name: DEBUG - List files in dist directory
+        run: ls -la dist/
 
       - name: Publish package
         working-directory: ./dist
