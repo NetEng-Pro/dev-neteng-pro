@@ -5,11 +5,11 @@
 # Webpack, Publish to npm" workflow completes successfully OR when manually
 # triggered.
 
-name: Deploy static content from ./dist to GitHub Pages
+name: Deploy static content from /dist to GitHub Pages
 
 on:
   workflow_run:
-    workflows: ["Build/Test Webpack, Publish to npm"]
+    workflows: ["Build/Test Webpack, Publish to npmjs"]
     types:
       - completed
   workflow_dispatch:
@@ -36,11 +36,11 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
- 
+        uses: actions/checkout@v4.2.2
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
- 
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -49,4 +49,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.5

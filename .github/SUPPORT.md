@@ -1,8 +1,8 @@
-<!--- SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
-      This file is part of Network Engineering Pro -->
+<!-- SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later -->
+<!-- This file is part of Network Engineering Pro -->
 
 # Support
 
-For personal support requests with Network Engineering Pro please use Stack Overflow
-([`Network Engineering Pro`](https://stack.neteng.pro)
-tag).
+For support requests related to Network Engineering Pro (NetEng-Pro) please use
+Stack Overflow Teams ([`Network Engineering Pro`](https://stack.neteng.pro) tag)
+or email contact (at) neteng.pro.

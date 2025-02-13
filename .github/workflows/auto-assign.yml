@@ -12,13 +12,13 @@ on:
     types: [opened]
 jobs:
   run:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       issues: write
       pull-requests: write
     steps:
       - name: "Auto-assign issue"
-        uses: pozil/auto-assign-issue@v1
+        uses: pozil/auto-assign-issue@v2.2.0
         with:
           repo-token: ${{ secrets.GH_PAT }}
           assignees: SunDevil311
