@@ -7,6 +7,7 @@
 
 ### Custom Ignores ###
 python-venv/
+.webpack_cache/
 .orig/
 server.mjs
 crypto.mjs
