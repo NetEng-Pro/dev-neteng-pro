@@ -47,10 +47,7 @@ Web: <https://bio.neteng.pro>
 
 # <a id="top">Network Engineering Pro</a>
 
-**Network Engineering Pro (NetEng-Pro)** is a dedicated community focused on
-providing guides, reference materials, and resources for **Free/Libre and Open
-Source Software (FLOSS)**, with a primary emphasis on **Android** and select
-**Linux** projects.
+**Network Engineering Pro (NetEng-Pro)** is a dedicated community focused on providing guides, reference materials, and resources for **Free/Libre and Open Source Software**, with a primary emphasis on **Android** and **Linux** projects.
 
 _**Table of Contents**_
 
@@ -159,12 +156,9 @@ FLOSS (and occasionally notable closed-source) apps for Android users.
 
 ## <a id="about-me">🚀 About Me</a>
 
-[<img src="img/sd311.png" width="100px" height="100px" alt="SunDevil311" />](https://github.com/SunDevil311)
+[<img src="img/sd311.png" width="150px" height="150px" alt="SunDevil311" />](https://github.com/SunDevil311)
 
-I'm a Network Security Enginneer specializing in
-[Palo Alto Networks](https://www.paloaltonetworks.com) solutions, including
-PAN-OS [Next-Gen Firewalls](https://docs.paloaltonetworks.com/pan-os) (NGFWs)
-and [Panorama management server](https://docs.paloaltonetworks.com/panorama).
+I'm a Network Security Enginneer specializing in [Palo Alto Networks](https://www.paloaltonetworks.com) solutions, including PAN-OS [Next-Gen Firewalls](https://docs.paloaltonetworks.com/pan-os) (NGFWs) and [Panorama management server](https://docs.paloaltonetworks.com/panorama).
 
 With several years of experience in Android development, I have a strong passion
 for integrating free and open source software (FLOSS) into my workflow. My
@@ -191,6 +185,8 @@ provide _Best Practices_ documentation for beginners, among other content.
 | [![cc-by](https://forthebadge.com/images/badges/cc-by.png)](https://creativecommons.org/licenses/by/4.0/) | [![gnu-gpl](img/gpl3-small.png)](https://www.gnu.org/licenses/gpl-3.0.html) | [![fsf](img/fsf-member.png)](https://my.fsf.org/join?referrer=6725885) |
 | :-------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 
+&nbsp;
+
 <code style="height: 50vh; width: 100%; background: transparent; border: none; border-radius: 0; resize: none; outline: none;">
 
 **[Network Engineering Pro](https://neteng.pro/)** (NetEng-Pro), a Free/Libre and Open Source Software Community  
@@ -201,8 +197,10 @@ either version 3 of the License, or (at your option) any later version.
 
 </code>
 
+&nbsp;
+
 <span style="text-align: center; font-size: 14px; font-weight: bold;">
 
-[Terms and Conditions](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/pages/terms.md) &nbsp; | &nbsp; [Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md)
+[Terms and Conditions](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/legal/TERMS.md) &nbsp; | &nbsp; [Copyright and Licensing](https://github.com/NetEng-Pro/dev-neteng-pro/blob/master/LICENSE.md)
 
 </span>
