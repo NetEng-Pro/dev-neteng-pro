@@ -67,9 +67,11 @@ a:active{
   background:none;
   border:none;
   border-radius:0;
+  font-size:12px;
   height:50vh;
   outline:none;
   resize:none;
+  text-align:center;
   width:100%;
 }
 
